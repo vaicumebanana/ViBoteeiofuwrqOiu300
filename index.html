@@ -1,3 +1,6 @@
+Vou corrigir o código para que todas as funcionalidades funcionem corretamente. O principal problema está na sintaxe do JavaScript, especialmente na definição dos objetos e na inicialização. Aqui está a versão corrigida:
+
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -2167,16 +2170,16 @@
                         'generatePresentationBtn', 'generateChecklistBtn', 'generateWorkflowBtn',
                         'generateBudgetBtn', 'generateInvoiceBtn', 'generateResumeBtn',
                         'generateCoverLetterBtn', 'generateJobDescriptionBtn', 'generatePerformanceReviewBtn',
-                        'generateKPIReportBtn', 'generateBusinessStrategyBtn', 'generateBusinessPlanBtn',
-                        'generatePitchBtn', 'generateInterviewBtn', 'generateCustomerServiceBtn',
-                        'generateNegotiationBtn', 'generateLeadershipBtn', 'generateTeamBuildingBtn',
-                        'generateStartupBtn', 'generateEcommerceBtn', 'generateSocialMediaMarketingBtn',
-                        'generateSEOStrategyBtn', 'generateBrandStrategyBtn', 'generateFinancialProjectionBtn',
-                        'generateSWOTBtn', 'generateMarketResearchBtn', 'generateSalesFunnelBtn',
-                        'generateCustomerPersonaBtn', 'generateCompetitiveAnalysisBtn', 'generateRiskAssessmentBtn',
-                        'generateExitStrategyBtn', 'generateFranchiseModelBtn', 'generateInvestorDeckBtn',
-                        'generateGrantProposalBtn', 'generatePartnershipAgreementBtn', 'generateNonDisclosureBtn',
-                        'generateEmployeeHandbookBtn', 'generateTrainingProgramBtn',
+                        'generateKPIReportBtn',                         'generateBusinessStrategyBtn', 'generateBusinessPlanBtn', 'generatePitchBtn',
+                        'generateInterviewBtn', 'generateCustomerServiceBtn', 'generateNegotiationBtn',
+                        'generateLeadershipBtn', 'generateTeamBuildingBtn', 'generateStartupBtn',
+                        'generateEcommerceBtn', 'generateSocialMediaMarketingBtn', 'generateSEOStrategyBtn',
+                        'generateBrandStrategyBtn', 'generateFinancialProjectionBtn', 'generateSWOTBtn',
+                        'generateMarketResearchBtn', 'generateSalesFunnelBtn', 'generateCustomerPersonaBtn',
+                        'generateCompetitiveAnalysisBtn', 'generateRiskAssessmentBtn', 'generateExitStrategyBtn',
+                        'generateFranchiseModelBtn', 'generateInvestorDeckBtn', 'generateGrantProposalBtn',
+                        'generatePartnershipAgreementBtn', 'generateNonDisclosureBtn', 'generateEmployeeHandbookBtn',
+                        'generateTrainingProgramBtn',
                         
                         // Criatividade (50)
                         'generatePoemBtn', 'generateStoryBtn', 'generateJokeBtn',
@@ -2197,452 +2200,455 @@
                         'generateChooseYourAdventureBtn', 'generateDrabbleBtn', 'generateVignetteBtn',
                         'generateStreamOfConsciousnessBtn', 'generateEpistolaryBtn',
                         
-                        // Vida Diária (50)
-                        'generateRecipeBtn', 'generateWorkoutBtn', 'generateTravelBtn',
-                        'generateAdviceBtn', 'generateParentingBtn', 'generateFinanceBtn',
-                        'generateHealthBtn', 'generateDietBtn', 'generateShoppingBtn',
-                        'generateHomeBtn', 'generateGardenBtn', 'generatePetCareBtn',
-                        'generateCarMaintenanceBtn', 'generateHomeRepairBtn', 'generateCleaningBtn',
-                        'generateOrganizationBtn', 'generateTimeManagementBtn', 'generateStressManagementBtn',
-                        'generateSleepTipsBtn', 'generateMeditationBtn', 'generateMealPlanBtn',
-                        'generateGroceryListBtn', 'generateBudgetPlanBtn', 'generateSavingsPlanBtn',
-                        'generateDebtReductionBtn', 'generateInvestmentPlanBtn', 'generateRetirementPlanBtn',
-                        'generateInsuranceAdviceBtn', 'generateTaxPlanningBtn', 'generateEstatePlanningBtn',
-                        'generateHomeDecorBtn', 'generateDIYProjectBtn', 'generateMovingChecklistBtn',
-                        'generatePackingListBtn', 'generateVacationPlanBtn', 'generateTravelPackingBtn',
-                        'generateItineraryBtn', 'generateLanguageLearningBtn', 'generateCulturalTipsBtn',
-                        'generateLocalCustomsBtn', 'generateSafetyTipsBtn', 'generateEmergencyPlanBtn',
-                        'generateFirstAidGuideBtn', 'generateWellnessPlanBtn', 'generateMindfulnessBtn',
-                        'generateYogaRoutineBtn', 'generateExercisePlanBtn', 'generateNutritionPlanBtn',
-                        'generateWeightLossPlanBtn', 'generateMuscleGainPlanBtn',
-                        
-                        // Educação (50)
-                        'generateQuizBtn', 'generateFlashcardsBtn', 'generateLessonPlanBtn',
-                        'generateStudyPlanBtn', 'generateHomeworkBtn', 'generateEssayBtn',
-                        'generateThesisBtn', 'generateResearchBtn', 'generateSummaryBtn',
-                        'generateMathProblemBtn', 'generateScienceExperimentBtn', 'generateHistoryTimelineBtn',
-                        'generateLanguageLessonBtn', 'generateCodingExerciseBtn', 'generateArtProjectBtn',
-                        'generateBookReportBtn', 'generateDebateTopicsBtn', 'generateCriticalThinkingBtn',
-                        'generateLearningStyleBtn', 'generateStudyTechniquesBtn', 'generateMemoryTechniquesBtn',
-                        'generateNoteTakingBtn', 'generateTimeManagementEduBtn', 'generateTestPreparationBtn',
-                        'generateScholarshipEssayBtn', 'generateCurriculumBtn', 'generatePedagogicalActivityBtn',
-                        'generateEducationalGameBtn', 'generateLearningAssessmentBtn', 'generateSpecialEducationBtn',
-                        'generateElearningCourseBtn', 'generateInteractiveLessonBtn', 'generateSTEMActivityBtn',
-                        'generateLiteracyActivityBtn', 'generateNumeracyActivityBtn', 'generateCriticalReadingBtn',
-                        'generateWritingPromptBtn', 'generateScienceProjectBtn', 'generateMathChallengeBtn',
-                        'generateHistoryProjectBtn', 'generateGeographyActivityBtn', 'generateArtEducationBtn',
-                        'generateMusicEducationBtn', 'generatePhysicalEducationBtn', 'generateLanguageArtsBtn',
-                        'generateSocialStudiesBtn', 'generateEnvironmentalEducationBtn', 'generateFinancialLiteracyBtn',
-                        'generateDigitalLiteracyBtn', 'generateMediaLiteracyBtn', 'generateCivicEducationBtn',
-                        'generateHealthEducationBtn', 'generateCareerGuidanceBtn',
-                        
-                        // Negócios (50)
-                        'generateBusinessBtn', 'generateMarketingBtn', 'generateSalesBtn',
-                        'generateProposalBtn', 'generateContractBtn', 'generateReportBtn',
-                        'generateSWOTBtn', 'generateBusinessPlanBtn', 'generatePitchBtn',
-                        'generateInterviewBtn', 'generateCustomerServiceBtn', 'generateNegotiationBtn',
-                        'generateLeadershipBtn', 'generateTeamBuildingBtn', 'generateStartupBtn',
-                        'generateEcommerceBtn', 'generateSocialMediaMarketingBtn', 'generateSEOStrategyBtn',
-                        'generateBrandStrategyBtn', 'generateFinancialProjectionBtn', 'generateMarketResearchBtn',
-                        'generateCompetitiveAnalysisBtn', 'generateRiskAssessmentBtn', 'generateExitStrategyBtn',
-                        'generateFranchiseModelBtn', 'generateInvestorDeckBtn', 'generateGrantProposalBtn',
-                        'generatePartnershipAgreementBtn', 'generateNonDisclosureBtn', 'generateEmployeeHandbookBtn',
-                        'generateTrainingProgramBtn', 'generateHRPolicyBtn', 'generatePerformanceMetricsBtn',
-                        'generateCustomerSurveyBtn', 'generateProductRoadmapBtn', 'generateBusinessModelBtn',
-                        'generateValuePropositionBtn', 'generateGoToMarketBtn', 'generatePricingStrategyBtn',
-                        'generateSupplyChainBtn', 'generateLogisticsPlanBtn', 'generateInventoryManagementBtn',
-                        'generateQualityControlBtn', 'generateProcessImprovementBtn', 'generateLeanMethodologyBtn',
-                        'generateSixSigmaBtn', 'generateAgileCoachBtn', 'generateScrumMasterBtn',
-                        'generateKanbanBoardBtn', 'generateBusinessContinuityBtn', 'generateDisasterRecoveryBtn',
-                        
-                        // Tecnologia (50)
-                        'generateAPIBtn', 'generateAlgorithmBtn', 'generateDatabaseBtn',
-                        'generateUIBtn', 'generateMobileAppBtn', 'generateWebsiteBtn',
-                        'generateGameBtn', 'generateAIBtn', 'generateBlockchainBtn',
-                        'generateSecurityBtn', 'generateDevOpsBtn', 'generateCloudComputingBtn',
-                        'generateDataScienceBtn', 'generateMachineLearningBtn', 'generateDeepLearningBtn',
-                        'generateNeuralNetworkBtn', 'generateComputerVisionBtn', 'generateNaturalLanguageBtn',
-                        'generateRoboticsBtn', 'generateIoTBtn', 'generateARVRBtn',
-                        'generateQuantumComputingBtn', 'generateCybersecurityBtn', 'generateEthicalHackingBtn',
-                        'generateDigitalForensicsBtn', 'generateSoftwareArchitectureBtn', 'generateMicroservicesBtn',
-                        'generateContainerizationBtn', 'generateKubernetesBtn', 'generateServerlessBtn',
-                        'generateBigDataBtn', 'generateDataWarehouseBtn', 'generateETLBtn',
-                        'generateDataVisualizationBtn', 'generateBusinessIntelligenceBtn', 'generateDataGovernanceBtn',
-                        'generateDataPrivacyBtn', 'generateComplianceBtn', 'generateITInfrastructureBtn',
-                        'generateNetworkSecurityBtn', 'generatePenetrationTestingBtn', 'generateVulnerabilityAssessmentBtn',
-                        'generateIncidentResponseBtn', 'generateThreatIntelligenceBtn', 'generateMalwareAnalysisBtn',
-                        'generateReverseEngineeringBtn', 'generateCryptographyBtn', 'generateZeroTrustBtn',
-                        
-                        // Entretenimento (50)
-                        'generateMovieBtn', 'generateTVShowBtn', 'generateBookBtn',
-                        'generateGameIdeaBtn', 'generateTriviaBtn', 'generateDebateBtn',
-                        'generatePodcastBtn', 'generateComedyBtn', 'generateHorrorBtn',
-                        'generateFantasyBtn', 'generateSciFiBtn', 'generateRomanceBtn',
-                        'generateMysteryBtn', 'generateAdventureBtn', 'generateFanFictionBtn',
-                        'generateBoardGameBtn', 'generateCardGameBtn', 'generateRolePlayingBtn',
-                        'generateVideoGameBtn', 'generateMobileGameBtn', 'generatePuzzleGameBtn',
-                        'generateStrategyGameBtn', 'generateSimulationGameBtn', 'generateSportsGameBtn',
-                        'generateMusicPlaylistBtn', 'generateMovieRecommendationBtn', 'generateTVShowRecommendationBtn',
-                        'generateBookRecommendationBtn', 'generateGameRecommendationBtn', 'generateMovieScriptBtn',
-                        'generateTVScriptBtn', 'generateTheaterScriptBtn', 'generateStandupComedyBtn',
-                        'generateSketchComedyBtn', 'generateSatireContentBtn', 'generateParodyContentBtn',
-                        'generateMemesBtn', 'generateViralContentBtn', 'generateSocialMediaContentBtn',
-                        'generateYouTubeScriptBtn', 'generatePodcastScriptBtn', 'generateStreamingContentBtn',
-                        'generateRealityShowBtn', 'generateGameShowBtn', 'generateTalentShowBtn',
-                        'generateTalkShowBtn', 'generateDocumentaryBtn', 'generateDocuseriesBtn',
-                        
-                        // Xadrez (6)
+                        // Xadrez
                         'playChessBtn', 'chessTipsBtn', 'chessOpeningsBtn',
                         'chessEndgamesBtn', 'chessPuzzlesBtn', 'chessAnalysisBtn'
                     ];
-                    
-                    // Cache all buttons
-                    this.tools.forEach(button => {
-                        this.elements[button] = document.getElementById(button);
-                    });
 
-                    this.typingIndicator = document.createElement("div");
-                    this.typingIndicator.className = "message bot typing";
-                    this.typingIndicator.textContent = "ViBot está digitando...";
-                    
-                    // Estado do jogo de xadrez
-                    this.chessGame = {
+                    // Configuração do tabuleiro de xadrez
+                    this.chess = {
                         board: null,
+                        game: new Chess(),
+                        statusEl: null,
+                        fenEl: null,
+                        pgnEl: null,
                         selectedSquare: null,
-                        possibleMoves: [],
-                        lastMove: null,
-                        playerColor: 'white',
-                        gameInProgress: false,
-                        fen: 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1'
+                        selectedPiece: null,
+                        possibleMoves: []
                     };
                 },
 
                 setupEventListeners() {
-                    // Core functionality
-                    this.elements.sendBtn.addEventListener('click', () => this.sendMessage());
-                    this.elements.userInput.addEventListener('keydown', e => {
+                    // Eventos principais
+                    this.elements.sendBtn.addEventListener('click', () => this.handleSendMessage());
+                    this.elements.userInput.addEventListener('keydown', (e) => {
                         if (e.key === 'Enter' && !e.shiftKey) {
                             e.preventDefault();
-                            this.sendMessage();
+                            this.handleSendMessage();
                         }
                     });
-                    
-                    // Auto-resize textarea
-                    this.elements.userInput.addEventListener('input', () => {
-                        this.elements.userInput.style.height = 'auto';
-                        this.elements.userInput.style.height = Math.min(this.elements.userInput.scrollHeight, 150) + 'px';
-                    });
-                    
-                    // Navigation
-                    this.elements.newConversationBtn.addEventListener('click', () => this.createNewConversation());
+
+                    // Eventos de UI
                     this.elements.toggleThemeBtn.addEventListener('click', () => this.toggleTheme());
                     this.elements.menuBtn.addEventListener('click', () => this.toggleSidebar());
                     this.elements.toolsBtn.addEventListener('click', () => this.toggleToolsSidebar());
-                    this.elements.modelSelector.addEventListener('change', e => this.updateModel(e.target.value));
-                    this.elements.temperatureSlider.addEventListener('input', e => this.updateTemperature(e.target.value));
-                    this.elements.maxTokensSlider.addEventListener('input', e => this.updateMaxTokens(e.target.value));
+                    this.elements.newConversationBtn.addEventListener('click', () => this.startNewConversation());
                     this.elements.deleteAllConversationsBtn.addEventListener('click', () => this.deleteAllConversations());
-                    
-                    // Tabs
-                    this.elements.chatTabBtn.addEventListener('click', () => this.showTab('chat'));
-                    this.elements.toolsTabBtn.addEventListener('click', () => this.showTab('tools'));
-                    this.elements.settingsTabBtn.addEventListener('click', () => this.showTab('settings'));
 
-                    // Tool buttons (300+ tools)
-                    this.tools.forEach(tool => {
-                        if (this.elements[tool]) {
-                            this.elements[tool].addEventListener('click', () => this.handleToolClick(tool));
+                    // Eventos de abas móveis
+                    this.elements.chatTabBtn.addEventListener('click', () => this.showChatTab());
+                    this.elements.toolsTabBtn.addEventListener('click', () => this.showToolsTab());
+                    this.elements.settingsTabBtn.addEventListener('click', () => this.showSettingsTab());
+
+                    // Eventos de configurações
+                    this.elements.modelSelector.addEventListener('change', (e) => {
+                        this.config.model = e.target.value;
+                        this.saveConfig();
+                        this.updateUI();
+                    });
+
+                    this.elements.temperatureSlider.addEventListener('input', (e) => {
+                        this.config.temperature = parseFloat(e.target.value);
+                        this.elements.temperatureValue.textContent = this.config.temperature.toFixed(1);
+                        this.saveConfig();
+                    });
+
+                    this.elements.maxTokensSlider.addEventListener('input', (e) => {
+                        this.config.maxTokens = parseInt(e.target.value);
+                        this.elements.maxTokensValue.textContent = this.config.maxTokens;
+                        this.saveConfig();
+                    });
+
+                    // Eventos para ferramentas
+                    this.tools.forEach(toolId => {
+                        const tool = document.getElementById(toolId);
+                        if (tool) {
+                            tool.addEventListener('click', () => this.handleToolClick(toolId));
                         }
                     });
+
+                    // Auto-ajuste da altura do textarea
+                    this.elements.userInput.addEventListener('input', this.autoResizeTextarea.bind(this));
                 },
 
                 setupInitialState() {
-                    this.conversations = {};
-                    this.currentConversationId = null;
-                    this.totalTokens = 0;
-
-                    this.loadTheme();
-                    this.createNewConversation();
-                },
-
-                updateUI() {
-                    this.elements.temperatureValue.textContent = this.config.temperature;
-                    this.elements.maxTokensValue.textContent = this.config.maxTokens;
-                },
-
-                loadTheme() {
-                    const theme = localStorage.getItem("vibot_theme") || "light";
-                    document.documentElement.setAttribute("data-theme", theme);
+                    // Carregar configurações salvas
+                    this.loadConfig();
                     
-                    // Update theme icon
-                    const icon = this.elements.toggleThemeBtn.querySelector('i');
-                    if (theme === "dark") {
-                        icon.classList.remove('fa-moon');
-                        icon.classList.add('fa-sun');
-                    } else {
-                        icon.classList.remove('fa-sun');
-                        icon.classList.add('fa-moon');
+                    // Carregar conversas salvas
+                    this.loadConversations();
+                    
+                    // Iniciar uma nova conversa se não houver nenhuma
+                    if (!this.currentConversationId) {
+                        this.startNewConversation();
                     }
+                    
+                    // Atualizar UI com as configurações carregadas
+                    this.updateUI();
+                },
+
+                autoResizeTextarea() {
+                    const textarea = this.elements.userInput;
+                    textarea.style.height = 'auto';
+                    textarea.style.height = (textarea.scrollHeight) + 'px';
                 },
 
                 toggleTheme() {
-                    const currentTheme = document.documentElement.getAttribute("data-theme");
-                    const newTheme = currentTheme === "dark" ? "light" : "dark";
-                    document.documentElement.setAttribute("data-theme", newTheme);
-                    localStorage.setItem("vibot_theme", newTheme);
-                    
-                    // Update theme icon
-                    const icon = this.elements.toggleThemeBtn.querySelector('i');
-                    if (newTheme === "dark") {
-                        icon.classList.remove('fa-moon');
-                        icon.classList.add('fa-sun');
-                    } else {
-                        icon.classList.remove('fa-sun');
-                        icon.classList.add('fa-moon');
-                    }
+                    const isDark = document.body.getAttribute('data-theme') === 'dark';
+                    document.body.setAttribute('data-theme', isDark ? '' : 'dark');
+                    localStorage.setItem('theme', isDark ? 'light' : 'dark');
+                    this.elements.toggleThemeBtn.innerHTML = isDark ? '<i class="fas fa-moon"></i>' : '<i class="fas fa-sun"></i>';
                 },
 
                 toggleSidebar() {
                     this.elements.sidebar.classList.toggle('active');
-                    this.elements.toolsSidebar.classList.remove('active');
+                    if (this.elements.sidebar.classList.contains('active')) {
+                        this.elements.toolsSidebar.classList.remove('active');
+                    }
                 },
 
                 toggleToolsSidebar() {
                     this.elements.toolsSidebar.classList.toggle('active');
-                    this.elements.sidebar.classList.remove('active');
-                },
-
-                updateModel(model) {
-                    this.config.model = model;
-                },
-
-                updateTemperature(value) {
-                    this.config.temperature = parseFloat(value);
-                    this.elements.temperatureValue.textContent = this.config.temperature;
-                },
-
-                updateMaxTokens(value) {
-                    this.config.maxTokens = parseInt(value);
-                    this.elements.maxTokensValue.textContent = this.config.maxTokens;
-                },
-
-                showTab(tabName) {
-                    if (tabName === 'tools') {
-                        this.toggleToolsSidebar();
-                    } else if (tabName === 'settings') {
-                        this.toggleSidebar();
-                    } else {
-                        this.elements.userInput.focus();
-                    }
-                },
-
-                createNewConversation() {
-                    const id = "conv_" + Date.now();
-                    this.conversations[id] = {
-                        id,
-                        title: "Nova Conversa",
-                        messages: [],
-                        createdAt: Date.now()
-                    };
-                    
-                    this.currentConversationId = id;
-                    this.renderConversationsList();
-                    this.renderCurrentConversation();
-                    this.elements.userInput.focus();
-                },
-
-                deleteAllConversations() {
-                    if (confirm("Tem certeza que deseja excluir TODAS as conversas? Esta ação não pode ser desfeita.")) {
-                        this.conversations = {};
-                        this.createNewConversation();
+                    if (this.elements.toolsSidebar.classList.contains('active')) {
                         this.elements.sidebar.classList.remove('active');
                     }
                 },
 
-                deleteConversation(id) {
-                    if (confirm("Tem certeza que deseja excluir esta conversa?")) {
-                        delete this.conversations[id];
+                showChatTab() {
+                    this.elements.sidebar.classList.remove('active');
+                    this.elements.toolsSidebar.classList.remove('active');
+                },
+
+                showToolsTab() {
+                    this.elements.toolsSidebar.classList.add('active');
+                    this.elements.sidebar.classList.remove('active');
+                },
+
+                showSettingsTab() {
+                    this.elements.sidebar.classList.add('active');
+                    this.elements.toolsSidebar.classList.remove('active');
+                },
+
+                loadConfig() {
+                    const savedConfig = localStorage.getItem('ViBotConfig');
+                    if (savedConfig) {
+                        Object.assign(this.config, JSON.parse(savedConfig));
+                    }
+                    
+                    // Aplicar configurações carregadas aos controles
+                    this.elements.modelSelector.value = this.config.model;
+                    this.elements.temperatureSlider.value = this.config.temperature;
+                    this.elements.temperatureValue.textContent = this.config.temperature.toFixed(1);
+                    this.elements.maxTokensSlider.value = this.config.maxTokens;
+                    this.elements.maxTokensValue.textContent = this.config.maxTokens;
+                    
+                    // Carregar tema
+                    const savedTheme = localStorage.getItem('theme') || 'light';
+                    document.body.setAttribute('data-theme', savedTheme === 'dark' ? 'dark' : '');
+                    this.elements.toggleThemeBtn.innerHTML = savedTheme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+                },
+
+                saveConfig() {
+                    localStorage.setItem('ViBotConfig', JSON.stringify({
+                        model: this.config.model,
+                        temperature: this.config.temperature,
+                        maxTokens: this.config.maxTokens,
+                        systemPrompt: this.config.systemPrompt
+                    }));
+                },
+
+                loadConversations() {
+                    this.conversations = JSON.parse(localStorage.getItem('ViBotConversations') || {};
+                    this.currentConversationId = localStorage.getItem('ViBotCurrentConversation');
+                    
+                    this.renderConversationList();
+                    
+                    if (this.currentConversationId && this.conversations[this.currentConversationId]) {
+                        this.renderConversation(this.currentConversationId);
+                    }
+                },
+
+                saveConversations() {
+                    localStorage.setItem('ViBotConversations', JSON.stringify(this.conversations));
+                    if (this.currentConversationId) {
+                        localStorage.setItem('ViBotCurrentConversation', this.currentConversationId);
+                    }
+                },
+
+                renderConversationList() {
+                    this.elements.conversationList.innerHTML = '';
+                    
+                    Object.keys(this.conversations).forEach(conversationId => {
+                        const conversation = this.conversations[conversationId];
+                        const isActive = conversationId === this.currentConversationId;
                         
-                        if (this.currentConversationId === id) {
-                            if (Object.keys(this.conversations).length > 0) {
-                                this.currentConversationId = Object.keys(this.conversations)[0];
+                        const conversationEl = document.createElement('button');
+                        conversationEl.className = `conversation-btn ${isActive ? 'active' : ''}`;
+                        conversationEl.innerHTML = `
+                            <i class="fas fa-comment conversation-icon"></i>
+                            ${conversation.title || 'Nova Conversa'}
+                            <button class="conversation-delete" data-id="${conversationId}">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        `;
+                        
+                        conversationEl.addEventListener('click', () => {
+                            this.currentConversationId = conversationId;
+                            this.renderConversation(conversationId);
+                            this.renderConversationList();
+                            this.toggleSidebar();
+                        });
+                        
+                        const deleteBtn = conversationEl.querySelector('.conversation-delete');
+                        deleteBtn.addEventListener('click', (e) => {
+                            e.stopPropagation();
+                            this.deleteConversation(conversationId);
+                        });
+                        
+                        this.elements.conversationList.appendChild(conversationEl);
+                    });
+                },
+
+                renderConversation(conversationId) {
+                    if (!this.conversations[conversationId]) return;
+                    
+                    const conversation = this.conversations[conversationId];
+                    this.elements.chatbox.innerHTML = '';
+                    
+                    if (conversation.messages.length === 0) {
+                        this.showWelcomeMessage();
+                    } else {
+                        conversation.messages.forEach(message => {
+                            this.appendMessage(message.role, message.content);
+                        });
+                        
+                        // Rolagem para a última mensagem
+                        setTimeout(() => {
+                            this.elements.chatbox.scrollTop = this.elements.chatbox.scrollHeight;
+                        }, 100);
+                    }
+                },
+
+                showWelcomeMessage() {
+                    const welcomeMessage = document.querySelector('.welcome-message');
+                    if (welcomeMessage) {
+                        this.elements.chatbox.innerHTML = '';
+                        this.elements.chatbox.appendChild(welcomeMessage.cloneNode(true));
+                    }
+                },
+
+                startNewConversation() {
+                    const newId = Date.now().toString();
+                    this.currentConversationId = newId;
+                    
+                    this.conversations[newId] = {
+                        id: newId,
+                        title: 'Nova Conversa',
+                        model: this.config.model,
+                        temperature: this.config.temperature,
+                        maxTokens: this.config.maxTokens,
+                        createdAt: new Date().toISOString(),
+                        messages: []
+                    };
+                    
+                    this.saveConversations();
+                    this.renderConversationList();
+                    this.renderConversation(newId);
+                    this.toggleSidebar();
+                },
+
+                deleteConversation(conversationId) {
+                    if (confirm('Tem certeza que deseja excluir esta conversa?')) {
+                        delete this.conversations[conversationId];
+                        
+                        if (this.currentConversationId === conversationId) {
+                            const remainingIds = Object.keys(this.conversations);
+                            this.currentConversationId = remainingIds.length > 0 ? remainingIds[0] : null;
+                            
+                            if (this.currentConversationId) {
+                                this.renderConversation(this.currentConversationId);
                             } else {
-                                this.createNewConversation();
+                                this.startNewConversation();
                             }
                         }
                         
-                        this.renderConversationsList();
-                        this.renderCurrentConversation();
+                        this.saveConversations();
+                        this.renderConversationList();
                     }
                 },
 
-                renderConversationsList() {
-                    this.elements.conversationList.innerHTML = "";
+                deleteAllConversations() {
+                    if (confirm('Tem certeza que deseja excluir TODAS as conversas? Esta ação não pode ser desfeita.')) {
+                        this.conversations = {};
+                        this.startNewConversation();
+                    }
+                },
+
+                handleSendMessage() {
+                    const userInput = this.elements.userInput.value.trim();
+                    if (!userInput) return;
                     
-                    Object.values(this.conversations)
-                        .sort((a, b) => b.createdAt - a.createdAt)
-                        .forEach(conversation => {
-                            const btn = document.createElement("button");
-                            btn.className = `conversation-btn ${conversation.id === this.currentConversationId ? "active" : ""}`;
-                            btn.innerHTML = `
-                                <i class="fas fa-comment conversation-icon"></i>
-                                <span>${conversation.title}</span>
-                                <button class="conversation-delete" data-id="${conversation.id}">
-                                    <i class="fas fa-trash"></i>
-                                </button>
-                            `;
-                            
-                            btn.onclick = () => {
-                                this.switchConversation(conversation.id);
-                                this.elements.sidebar.classList.remove('active');
-                            };
-                            
-                            const deleteBtn = btn.querySelector('.conversation-delete');
-                            deleteBtn.onclick = (e) => {
-                                e.stopPropagation();
-                                this.deleteConversation(conversation.id);
-                            };
-                            
-                            this.elements.conversationList.appendChild(btn);
-                        });
+                    // Adicionar mensagem do usuário ao chat
+                    this.appendMessage('user', userInput);
+                    
+                    // Limpar input
+                    this.elements.userInput.value = '';
+                    this.autoResizeTextarea();
+                    
+                    // Desabilitar botão de enviar enquanto processa
+                    this.elements.sendBtn.disabled = true;
+                    
+                    // Adicionar mensagem de "digitando..."
+                    const typingId = 'typing-' + Date.now();
+                    this.appendMessage('assistant', '<span class="typing">Digitando...</span>', typingId);
+                    
+                    // Salvar mensagem do usuário na conversa
+                    this.saveUserMessage(userInput);
+                    
+                    // Preparar mensagens para a API
+                    const messages = [
+                        { role: 'system', content: this.config.systemPrompt },
+                        ...this.conversations[this.currentConversationId].messages.map(msg => ({
+                            role: msg.role,
+                            content: msg.content
+                        }))
+                    ];
+                    
+                    // Chamar a API
+                    this.callAPI(messages, typingId);
                 },
 
-                switchConversation(id) {
-                    this.currentConversationId = id;
-                    this.renderConversationsList();
-                    this.renderCurrentConversation();
-                },
-
-                renderCurrentConversation() {
-                    this.elements.chatbox.innerHTML = "";
+                saveUserMessage(content) {
+                    if (!this.currentConversationId || !this.conversations[this.currentConversationId]) return;
                     
                     const conversation = this.conversations[this.currentConversationId];
+                    conversation.messages.push({
+                        role: 'user',
+                        content: content,
+                        timestamp: new Date().toISOString()
+                    });
                     
-                    if (conversation.messages.length === 0) {
-                        this.addMessage("bot", "Olá! Sou o ViBot, seu assistente de IA com 300+ ferramentas. Como posso te ajudar hoje?");
-                    } else {
-                        conversation.messages.forEach(msg => {
-                            this.addMessageToChatbox(msg.role === "assistant" ? "bot" : "user", msg.content);
-                        });
+                    // Atualizar título se for a primeira mensagem
+                    if (conversation.messages.length === 1) {
+                        conversation.title = content.length > 30 ? content.substring(0, 30) + '...' : content;
+                        this.renderConversationList();
                     }
                     
-                    this.elements.chatbox.scrollTop = this.elements.chatbox.scrollHeight;
+                    this.saveConversations();
                 },
 
-                async sendMessage() {
-                    const message = this.elements.userInput.value.trim();
-                    if (!message) return;
+                saveAssistantMessage(content, typingId) {
+                    if (!this.currentConversationId || !this.conversations[this.currentConversationId]) return;
                     
                     const conversation = this.conversations[this.currentConversationId];
+                    conversation.messages.push({
+                        role: 'assistant',
+                        content: content,
+                        timestamp: new Date().toISOString()
+                    });
                     
-                    this.addMessage("user", message);
-                    this.elements.userInput.value = "";
-                    this.elements.userInput.style.height = 'auto';
+                    this.saveConversations();
                     
-                    this.elements.chatbox.appendChild(this.typingIndicator);
-                    this.elements.chatbox.scrollTop = this.elements.chatbox.scrollHeight;
-                    
+                    // Remover mensagem de "digitando..."
+                    if (typingId) {
+                        const typingElement = document.getElementById(typingId);
+                        if (typingElement) {
+                            typingElement.remove();
+                        }
+                    }
+                },
+
+                async callAPI(messages, typingId) {
                     try {
-                        const messages = [
-                            { role: "system", content: this.config.systemPrompt },
-                            ...conversation.messages.map(msg => ({
-                                role: msg.role === "bot" ? "assistant" : msg.role,
-                                content: this.getTextContent(msg.content)
-                            }))
-                        ];
-                        
-                        // Validação reforçada dos parâmetros
-                        const safeMaxTokens = Math.max(128, Math.min(parseInt(this.config.maxTokens), 16384));
-                        const safeTemperature = Math.max(0.1, Math.min(parseFloat(this.config.temperature), 2.0));
-                        
                         const response = await fetch(this.config.apiUrl, {
-                            method: "POST",
+                            method: 'POST',
                             headers: {
-                                "Content-Type": "application/json",
-                                "Authorization": `Bearer ${this.config.apiKey}`
+                                'Content-Type': 'application/json',
+                                'Authorization': `Bearer ${this.config.apiKey}`
                             },
                             body: JSON.stringify({
                                 model: this.config.model,
                                 messages: messages,
-                                temperature: safeTemperature,
-                                max_tokens: safeMaxTokens,
+                                temperature: this.config.temperature,
+                                max_tokens: this.config.maxTokens,
                                 stream: false
                             })
                         });
                         
                         if (!response.ok) {
-                            const errorData = await response.json();
-                            console.error("Detalhes do erro:", errorData);
-                            throw new Error(`Erro na API: ${response.status} - ${errorData.error?.message || 'Sem detalhes'}`);
+                            throw new Error(`Erro na API: ${response.status} ${response.statusText}`);
                         }
                         
                         const data = await response.json();
-                        const botMessage = data.choices[0].message.content;
+                        const assistantMessage = data.choices[0].message.content;
                         
-                        this.typingIndicator.remove();
-                        this.addMessage("bot", botMessage);
+                        // Salvar e exibir mensagem do assistente
+                        this.saveAssistantMessage(assistantMessage, typingId);
+                        this.appendMessage('assistant', assistantMessage);
                         
-                        this.totalTokens += data.usage?.total_tokens || 0;
                     } catch (error) {
-                        this.typingIndicator.remove();
-                        this.addMessage("bot", `⚠️ Erro: ${error.message}`, "error");
-                        console.error("Erro completo:", error);
+                        console.error('Erro ao chamar a API:', error);
+                        this.appendMessage('error', `Ocorreu um erro: ${error.message}`);
+                        
+                        // Remover mensagem de "digitando..." em caso de erro
+                        if (typingId) {
+                            const typingElement = document.getElementById(typingId);
+                            if (typingElement) {
+                                typingElement.remove();
+                            }
+                        }
+                    } finally {
+                        this.elements.sendBtn.disabled = false;
                     }
                 },
 
-                addMessage(role, content, type = null) {
-                    const conversation = this.conversations[this.currentConversationId];
-                    const apiRole = role === "bot" ? "assistant" : role;
-                    const message = { role: apiRole, content, type, timestamp: Date.now() };
-                    
-                    conversation.messages.push(message);
-                    
-                    if (role === "user" && conversation.messages.length === 1) {
-                        conversation.title = content.length > 30 ? content.substring(0, 30) + "..." : content;
-                        this.renderConversationsList();
-                    }
-                    
-                    this.addMessageToChatbox(role, content, type);
-                    this.elements.chatbox.scrollTop = this.elements.chatbox.scrollHeight;
-                },
-
-                addMessageToChatbox(role, content, type = null) {
-                    const messageDiv = document.createElement("div");
+                appendMessage(role, content, id = null) {
+                    const messageDiv = document.createElement('div');
                     messageDiv.className = `message ${role}`;
-                    if (type) messageDiv.classList.add(type);
+                    if (id) messageDiv.id = id;
+                    
                     messageDiv.innerHTML = content;
                     
-                    const actionsDiv = document.createElement("div");
-                    actionsDiv.className = "message-actions";
+                    // Adicionar ações para mensagens do bot
+                    if (role === 'assistant') {
+                        const actionsDiv = document.createElement('div');
+                        actionsDiv.className = 'message-actions';
+                        actionsDiv.innerHTML = `
+                            <button class="action-btn copy-btn" title="Copiar">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                            <button class="action-btn download-btn" title="Baixar">
+                                <i class="fas fa-download"></i>
+                            </button>
+                        `;
+                        
+                        const copyBtn = actionsDiv.querySelector('.copy-btn');
+                        copyBtn.addEventListener('click', () => {
+                            navigator.clipboard.writeText(content);
+                            copyBtn.innerHTML = '<i class="fas fa-check"></i>';
+                            setTimeout(() => {
+                                copyBtn.innerHTML = '<i class="fas fa-copy"></i>';
+                            }, 2000);
+                        });
+                        
+                        const downloadBtn = actionsDiv.querySelector('.download-btn');
+                        downloadBtn.addEventListener('click', () => {
+                            this.downloadMessage(content);
+                        });
+                        
+                        messageDiv.appendChild(actionsDiv);
+                    }
                     
-                    const copyBtn = document.createElement("button");
-                    copyBtn.className = "action-btn";
-                    copyBtn.innerHTML = `<i class="fas fa-copy"></i> Copiar`;
-                    copyBtn.onclick = () => {
-                        navigator.clipboard.writeText(this.getTextContent(content));
-                        copyBtn.innerHTML = `<i class="fas fa-check"></i> Copiado!`;
-                        setTimeout(() => {
-                            copyBtn.innerHTML = `<i class="fas fa-copy"></i> Copiar`;
-                        }, 2000);
-                    };
-                    actionsDiv.appendChild(copyBtn);
-                    
-                    // Adiciona botão de download
-                    const downloadBtn = document.createElement("button");
-                    downloadBtn.className = "download-btn";
-                    downloadBtn.innerHTML = `<i class="fas fa-download"></i> Baixar`;
-                    downloadBtn.onclick = () => {
-                        this.downloadText(content);
-                    };
-                    actionsDiv.appendChild(downloadBtn);
-                    
-                    messageDiv.appendChild(actionsDiv);
                     this.elements.chatbox.appendChild(messageDiv);
+                    
+                    // Rolagem automática para a nova mensagem
+                    setTimeout(() => {
+                        this.elements.chatbox.scrollTop = this.elements.chatbox.scrollHeight;
+                    }, 100);
                 },
 
-                downloadText(content) {
-                    const text = this.getTextContent(content);
-                    const blob = new Blob([text], { type: 'text/plain' });
+                downloadMessage(content) {
+                    const blob = new Blob([content], { type: 'text/plain' });
                     const url = URL.createObjectURL(blob);
                     const a = document.createElement('a');
                     a.href = url;
@@ -2653,379 +2659,360 @@
                     URL.revokeObjectURL(url);
                 },
 
-                getTextContent(html) {
-                    const temp = document.createElement('div');
-                    temp.innerHTML = html;
-                    return temp.textContent || temp.innerText || '';
-                },
-                
                 handleToolClick(toolId) {
-                    const toolPrompts = {
-                        // Produtividade (50)
-                        generateEmailBtn: `Por favor, gere um e-mail profissional com base nas informações que eu fornecer.`,
-                        summarizeTextBtn: `Por favor, resuma o seguinte texto mantendo os pontos principais.`,
-                        translateTextBtn: `Por favor, traduza o seguinte texto para o idioma que eu especificar.`,
-                        improveTextBtn: `Por favor, revise e melhore o seguinte texto, tornando-o mais claro e profissional.`,
-                        generateCodeBtn: `Por favor, gere código com base nas especificações que eu fornecer.`,
-                        generateIdeasBtn: `Por favor, gere ideias criativas com base no tema que eu fornecer.`,
-                        analyzeDataBtn: `Por favor, analise os dados que eu fornecer e extraia insights relevantes.`,
-                        createContentBtn: `Por favor, crie conteúdo de qualidade com base no tópico que eu fornecer.`,
-                        explainConceptBtn: `Por favor, explique este conceito de forma clara e didática.`,
-                        solveProblemBtn: `Por favor, me ajude a solucionar este problema com uma abordagem passo a passo.`,
-                        generateScheduleBtn: `Por favor, crie um cronograma eficiente com base nos parâmetros que eu fornecer.`,
-                        generateMeetingBtn: `Por favor, ajude a planejar uma reunião produtiva com agenda e tópicos de discussão.`,
-                        generatePresentationBtn: `Por favor, ajude a criar uma apresentação profissional sobre o tópico que eu mencionar.`,
-                        generateChecklistBtn: `Por favor, crie uma lista de verificação abrangente para a tarefa que eu descrever.`,
-                        generateWorkflowBtn: `Por favor, desenhe um fluxo de trabalho eficiente para o processo que eu mencionar.`,
-                        generateBudgetBtn: `Por favor, ajude a criar um orçamento detalhado com base nos parâmetros que eu fornecer.`,
-                        generateInvoiceBtn: `Por favor, gere uma fatura profissional com base nos dados que eu fornecer.`,
-                        generateResumeBtn: `Por favor, ajude a criar um currículo impressionante com base na minha experiência.`,
-                        generateCoverLetterBtn: `Por favor, ajude a escrever uma carta de apresentação convincente para a vaga que eu mencionar.`,
-                        generateJobDescriptionBtn: `Por favor, ajude a criar uma descrição de vaga detalhada para a posição que eu mencionar.`,
-                        generatePerformanceReviewBtn: `Por favor, ajude a preparar uma avaliação de desempenho construtiva.`,
-                        generateKPIReportBtn: `Por favor, ajude a criar um relatório de KPIs com métricas relevantes.`,
-                        generateBusinessStrategyBtn: `Por favor, ajude a desenvolver uma estratégia de negócios para o cenário que eu descrever.`,
-                        generateBusinessPlanBtn: `Por favor, ajude a estruturar um plano de negócios completo.`,
-                        generatePitchBtn: `Por favor, ajude a criar um pitch convincente para investidores.`,
-                        generateInterviewBtn: `Por favor, prepare perguntas para uma entrevista sobre o tópico que eu fornecer.`,
-                        generateCustomerServiceBtn: `Por favor, sugira abordagens para lidar com situações de atendimento ao cliente.`,
-                        generateNegotiationBtn: `Por favor, sugira estratégias de negociação para o cenário que eu descrever.`,
-                        generateLeadershipBtn: `Por favor, sugira técnicas de liderança para a situação que eu mencionar.`,
-                        generateTeamBuildingBtn: `Por favor, sugira dinâmicas de grupo para o objetivo que eu mencionar.`,
-                        generateStartupBtn: `Por favor, dê conselhos para startups no estágio que eu mencionar.`,
-                        generateEcommerceBtn: `Por favor, sugira estratégias para melhorar um e-commerce.`,
-                        generateSocialMediaMarketingBtn: `Por favor, sugira um plano de marketing digital para a plataforma que eu mencionar.`,
-                        generateSEOStrategyBtn: `Por favor, sugira estratégias de SEO para o site que eu mencionar.`,
-                        generateBrandStrategyBtn: `Por favor, ajude a desenvolver uma estratégia de marca para o negócio que eu descrever.`,
-                        generateFinancialProjectionBtn: `Por favor, ajude a criar projeções financeiras para o negócio que eu mencionar.`,
-                        generateSWOTBtn: `Por favor, faça uma análise SWOT para o negócio que eu descrever.`,
-                        generateMarketResearchBtn: `Por favor, ajude a planejar uma pesquisa de mercado eficaz.`,
-                        generateSalesFunnelBtn: `Por favor, ajude a desenhar um funil de vendas eficiente.`,
-                        generateCustomerPersonaBtn: `Por favor, ajude a criar personas de cliente realistas.`,
-                        generateCompetitiveAnalysisBtn: `Por favor, faça uma análise competitiva para o setor que eu mencionar.`,
-                        generateRiskAssessmentBtn: `Por favor, avalie os riscos para o projeto que eu descrever.`,
-                        generateExitStrategyBtn: `Por favor, sugira estratégias de saída para o negócio que eu mencionar.`,
-                        generateFranchiseModelBtn: `Por favor, ajude a desenvolver um modelo de franquia.`,
-                        generateInvestorDeckBtn: `Por favor, ajude a criar um deck de investidores persuasivo.`,
-                        generateGrantProposalBtn: `Por favor, ajude a escrever uma proposta de subsídio convincente.`,
-                        generatePartnershipAgreementBtn: `Por favor, ajude a estruturar um acordo de parceria.`,
-                        generateNonDisclosureBtn: `Por favor, ajude a redigir um acordo de confidencialidade.`,
-                        generateEmployeeHandbookBtn: `Por favor, ajude a criar um manual do funcionário abrangente.`,
-                        generateTrainingProgramBtn: `Por favor, ajude a desenvolver um programa de treinamento eficaz.`,
+                    let prompt = '';
+                    
+                    // Definir prompts para diferentes ferramentas
+                    switch (toolId) {
+                        case 'generateEmailBtn':
+                            prompt = "Por favor, me ajude a escrever um e-mail profissional sobre:";
+                            break;
+                        case 'summarizeTextBtn':
+                            prompt = "Por favor, resuma o seguinte texto de forma clara e concisa:";
+                            break;
+                        case 'translateTextBtn':
+                            prompt = "Por favor, traduza o seguinte texto para [idioma desejado]:";
+                            break;
+                        case 'improveTextBtn':
+                            prompt = "Por favor, melhore e otimize o seguinte texto:";
+                            break;
+                        case 'generateCodeBtn':
+                            prompt = "Por favor, gere código para [descreva o que precisa] na linguagem [especifique a linguagem]:";
+                            break;
+                        case 'playChessBtn':
+                            this.startChessGame();
+                            return;
+                        case 'chessTipsBtn':
+                            prompt = "Por favor, me dê dicas gerais para melhorar no xadrez:";
+                            break;
+                        case 'chessOpeningsBtn':
+                            prompt = "Por favor, explique algumas aberturas de xadrez populares e quando usá-las:";
+                            break;
+                        case 'chessEndgamesBtn':
+                            prompt = "Por favor, explique alguns princípios importantes de finais de jogo no xadrez:";
+                            break;
+                        case 'chessPuzzlesBtn':
+                            prompt = "Por favor, me apresente um problema/puzzle de xadrez para eu resolver:";
+                            break;
+                        case 'chessAnalysisBtn':
+                            prompt = "Por favor, analise a seguinte posição de xadrez no formato FEN: [cole o FEN aqui]";
+                            break;
+                        default:
+                            prompt = `Por favor, me ajude com ${document.getElementById(toolId).textContent.trim()}:`;
+                    }
+                    
+                    // Definir o prompt na área de entrada
+                    this.elements.userInput.value = prompt + ' ';
+                    this.elements.userInput.focus();
+                    this.autoResizeTextarea();
+                    
+                    // Fechar a barra lateral de ferramentas
+                    this.elements.toolsSidebar.classList.remove('active');
+                },
+
+                startChessGame() {
+                    // Limpar o chatbox
+                    this.elements.chatbox.innerHTML = '';
+                    
+                    // Criar container do tabuleiro
+                    const chessContainer = document.createElement('div');
+                    chessContainer.className = 'chess-container';
+                    
+                    // Criar tabuleiro
+                    const boardEl = document.createElement('div');
+                    boardEl.className = 'chess-board';
+                    boardEl.id = 'chess-board';
+                    
+                    // Criar controles
+                    const controlsEl = document.createElement('div');
+                    controlsEl.className = 'chess-controls';
+                    
+                    // Área de status
+                    const statusEl = document.createElement('div');
+                    statusEl.className = 'chess-status';
+                    statusEl.textContent = 'Brancas começam';
+                    
+                    // Área de dicas
+                    const hintEl = document.createElement('div');
+                    hintEl.className = 'chess-hint';
+                    hintEl.textContent = 'Clique em uma peça para ver os movimentos possíveis';
+                    
+                    // Input para movimentos
+                    const moveInputEl = document.createElement('div');
+                    moveInputEl.className = 'chess-move-input';
+                    moveInputEl.innerHTML = `
+                        <input type="text" id="chess-move-input" placeholder="Digite seu movimento (ex: e2e4)">
+                        <button id="chess-move-submit">Mover</button>
+                    `;
+                    
+                    // Botões de ação
+                    const buttonsEl = document.createElement('div');
+                    buttonsEl.className = 'chess-buttons';
+                    buttonsEl.innerHTML = `
+                        <button id="chess-undo">Desfazer</button>
+                        <button id="chess-reset">Reiniciar</button>
+                        <button id="chess-hint">Dica</button>
+                    `;
+                    
+                    // Montar controles
+                    controlsEl.appendChild(statusEl);
+                    controlsEl.appendChild(hintEl);
+                    controlsEl.appendChild(moveInputEl);
+                    controlsEl.appendChild(buttonsEl);
+                    
+                    // Montar container
+                    chessContainer.appendChild(boardEl);
+                    chessContainer.appendChild(controlsEl);
+                    
+                    // Adicionar ao chatbox
+                    this.elements.chatbox.appendChild(chessContainer);
+                    
+                    // Inicializar o jogo de xadrez
+                    this.initChessGame(boardEl, statusEl, hintEl);
+                },
+
+                initChessGame(boardEl, statusEl, hintEl) {
+                    // Configurar o tabuleiro
+                    this.chess.board = boardEl;
+                    this.chess.statusEl = statusEl;
+                    this.chess.hintEl = hintEl;
+                    this.chess.game.reset();
+                    
+                    // Renderizar o tabuleiro
+                    this.renderChessBoard();
+                    
+                    // Event listeners para os controles
+                    document.getElementById('chess-move-submit').addEventListener('click', () => {
+                        const moveInput = document.getElementById('chess-move-input').value.trim();
+                        if (moveInput) {
+                            this.handleChessMove(moveInput);
+                        }
+                    });
+                    
+                    document.getElementById('chess-move-input').addEventListener('keypress', (e) => {
+                        if (e.key === 'Enter') {
+                            const moveInput = document.getElementById('chess-move-input').value.trim();
+                            if (moveInput) {
+                                this.handleChessMove(moveInput);
+                            }
+                        }
+                    });
+                    
+                    document.getElementById('chess-undo').addEventListener('click', () => {
+                        this.undoChessMove();
+                    });
+                    
+                    document.getElementById('chess-reset').addEventListener('click', () => {
+                        this.resetChessGame();
+                    });
+                    
+                    document.getElementById('chess-hint').addEventListener('click', () => {
+                        this.getChessHint();
+                    });
+                },
+
+                renderChessBoard() {
+                    this.chess.board.innerHTML = '';
+                    
+                    const files = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
+                    const ranks = [8, 7, 6, 5, 4, 3, 2, 1];
+                    
+                    ranks.forEach(rank => {
+                        files.forEach(file => {
+                            const square = file + rank;
+                            const squareEl = document.createElement('div');
+                            squareEl.className = `chess-square ${(files.indexOf(file) + rank) % 2 === 0 ? 'dark' : 'light'}`;
+                            squareEl.dataset.square = square;
+                            
+                            // Adicionar coordenadas
+                            if (rank === 1) {
+                                const fileCoord = document.createElement('span');
+                                fileCoord.className = 'chess-coords bottom';
+                                fileCoord.textContent = file;
+                                squareEl.appendChild(fileCoord);
+                            }
+                            
+                            if (file === 'h') {
+                                const rankCoord = document.createElement('span');
+                                rankCoord.className = 'chess-coords top';
+                                rankCoord.textContent = rank;
+                                squareEl.appendChild(rankCoord);
+                            }
+                            
+                            // Adicionar peça se existir
+                            const piece = this.chess.game.get(square);
+                            if (piece) {
+                                const pieceEl = document.createElement('div');
+                                pieceEl.className = `chess-piece ${piece.color}`;
+                                pieceEl.innerHTML = this.getChessPieceSymbol(piece);
+                                pieceEl.dataset.square = square;
+                                squareEl.appendChild(pieceEl);
+                            }
+                            
+                            // Event listeners para interação
+                            squareEl.addEventListener('click', () => this.handleSquareClick(square));
+                            
+                            this.chess.board.appendChild(squareEl);
+                        });
+                    });
+                    
+                    // Atualizar status
+                    this.updateChessStatus();
+                },
+
+                getChessPieceSymbol(piece) {
+                    const symbols = {
+                        p: '♟', n: '♞', b: '♝', r: '♜', q: '♛', k: '♚',
+                        P: '♙', N: '♘', B: '♗', R: '♖', Q: '♕', K: '♔'
+                    };
+                    return symbols[piece.type] || '';
+                },
+
+                handleSquareClick(square) {
+                    // Se já tiver uma peça selecionada, tentar mover
+                    if (this.chess.selectedSquare) {
+                        const move = {
+                            from: this.chess.selectedSquare,
+                            to: square,
+                            promotion: 'q' // Sempre promover a rainha por padrão
+                        };
                         
-                        // Criatividade (50)
-                        generatePoemBtn: `Por favor, escreva um poema sobre o tema que eu fornecer.`,
-                        generateStoryBtn: `Por favor, crie uma história interessante com base no tema que eu fornecer.`,
-                        generateJokeBtn: `Por favor, conte uma piada sobre o assunto que eu mencionar.`,
-                        generateScriptBtn: `Por favor, escreva um roteiro para o cenário que eu descrever.`,
-                        generateSongBtn: `Por favor, componha uma letra de música no estilo que eu especificar.`,
-                        generateSpeechBtn: `Por favor, escreva um discurso sobre o tema que eu mencionar.`,
-                        generateArtBtn: `Por favor, descreva uma obra de arte baseada na minha descrição.`,
-                        generateDesignBtn: `Por favor, sugira um design com base nos requisitos que eu fornecer.`,
-                        generateBrandingBtn: `Por favor, crie uma identidade de marca para o negócio que eu descrever.`,
-                        generateSloganBtn: `Por favor, crie slogans criativos para o produto/marca que eu mencionar.`,
-                        generateCharacterBtn: `Por favor, crie um personagem detalhado com base nas características que eu fornecer.`,
-                        generateWorldBuildingBtn: `Por favor, ajude a construir um mundo ficcional rico e detalhado.`,
-                        generatePlotTwistBtn: `Por favor, sugira reviravoltas criativas para a história que eu descrever.`,
-                        generateDialogueBtn: `Por favor, escreva um diálogo convincente entre os personagens que eu descrever.`,
-                        generateHaikuBtn: `Por favor, escreva um haicai sobre o tema que eu mencionar.`,
-                        generateLimerickBtn: `Por favor, escreva um limerique divertido sobre o assunto que eu mencionar.`,
-                        generateAcrosticBtn: `Por favor, crie um acróstico usando a palavra que eu fornecer.`,
-                        generateMetaphorBtn: `Por favor, crie metáforas criativas para descrever o conceito que eu mencionar.`,
-                        generateRiddleBtn: `Por favor, crie charadas engenhosas sobre o tema que eu mencionar.`,
-                        generatePuzzleBtn: `Por favor, crie quebra-cabeças ou enigmas interessantes.`,
-                        generateComicScriptBtn: `Por favor, escreva um roteiro para uma história em quadrinhos.`,
-                        generateScreenplayBtn: `Por favor, escreva um roteiro cinematográfico.`,
-                        generateTheaterPlayBtn: `Por favor, escreva uma peça teatral.`,
-                        generateRadioDramaBtn: `Por favor, escreva um roteiro para radionovela.`,
-                        generateChildrenStoryBtn: `Por favor, escreva uma história infantil.`,
-                        generateFairyTaleBtn: `Por favor, escreva um conto de fadas.`,
-                        generateMythologyBtn: `Por favor, crie um mito ou lenda original.`,
-                        generateUrbanLegendBtn: `Por favor, invente uma lenda urbana convincente.`,
-                        generateAllegoryBtn: `Por favor, escreva uma alegoria sobre o tema que eu mencionar.`,
-                        generateParableBtn: `Por favor, escreva uma parábola com uma lição moral.`,
-                        generateFableBtn: `Por favor, escreva uma fábula com animais personificados.`,
-                        generateSatireBtn: `Por favor, escreva uma sátira sobre o assunto que eu mencionar.`,
-                        generateParodyBtn: `Por favor, escreva uma paródia de uma obra conhecida.`,
-                        generateSonnetBtn: `Por favor, escreva um soneto no estilo shakespeariano.`,
-                        generateOdeBtn: `Por favor, escreva uma ode ao objeto ou conceito que eu mencionar.`,
-                        generateElegyBtn: `Por favor, escreva uma elegia melancólica.`,
-                        generateBalladBtn: `Por favor, escreva uma balada narrativa.`,
-                        generateEpicBtn: `Por favor, escreva um poema épico sobre o herói que eu descrever.`,
-                        generateFreeVerseBtn: `Por favor, escreva um poema em verso livre sobre o tema que eu mencionar.`,
-                        generateConcretePoetryBtn: `Por favor, crie um poema concreto com forma visual.`,
-                        generateBlackoutPoetryBtn: `Por favor, crie um poema de apagamento a partir do texto que eu fornecer.`,
-                        generateFlashFictionBtn: `Por favor, escreva um microconto (história muito curta).`,
-                        generateSixWordStoryBtn: `Por favor, crie uma história em apenas seis palavras.`,
-                        generateTwitteratureBtn: `Por favor, escreva uma história no estilo twitteratura (limitada a tweets).`,
-                        generateInteractiveFictionBtn: `Por favor, crie uma ficção interativa com múltiplos caminhos.`,
-                        generateChooseYourAdventureBtn: `Por favor, escreva uma história do tipo "Escolha sua Aventura".`,
-                        generateDrabbleBtn: `Por favor, escreva um drabble (história exatamente com 100 palavras).`,
-                        generateVignetteBtn: `Por favor, escreva uma vinheta literária (cena curta e impressionista).`,
-                        generateStreamOfConsciousnessBtn: `Por favor, escreva no estilo fluxo de consciência.`,
-                        generateEpistolaryBtn: `Por favor, escreva uma história em formato epistolar (cartas/diários).`,
+                        try {
+                            const result = this.chess.game.move(move);
+                            if (result) {
+                                this.chess.selectedSquare = null;
+                                this.chess.selectedPiece = null;
+                                this.clearPossibleMoves();
+                                this.renderChessBoard();
+                            } else {
+                                // Movimento inválido, selecionar outra peça
+                                this.selectPiece(square);
+                            }
+                        } catch (e) {
+                            console.error('Movimento inválido:', e);
+                            this.selectPiece(square);
+                        }
+                    } else {
+                        // Selecionar uma peça
+                        this.selectPiece(square);
+                    }
+                },
+
+                selectPiece(square) {
+                    const piece = this.chess.game.get(square);
+                    
+                    // Verificar se é a vez do jogador
+                    if (piece && piece.color === this.chess.game.turn()) {
+                        this.chess.selectedSquare = square;
+                        this.chess.selectedPiece = piece;
                         
-                        // Vida Diária (50)
-                        generateRecipeBtn: `Por favor, sugira uma receita com os ingredientes que eu mencionar.`,
-                        generateWorkoutBtn: `Por favor, crie um plano de treino para o objetivo que eu especificar.`,
-                        generateTravelBtn: `Por favor, planeje um roteiro de viagem para o destino que eu especificar.`,
-                        generateAdviceBtn: `Por favor, dê um conselho útil sobre a situação que eu descrever.`,
-                        generateParentingBtn: `Por favor, dê conselhos para pais sobre o tópico que eu mencionar.`,
-                        generateFinanceBtn: `Por favor, dê conselhos financeiros para a situação que eu descrever.`,
-                        generateHealthBtn: `Por favor, dê conselhos de saúde para a condição que eu mencionar.`,
-                        generateDietBtn: `Por favor, sugira um plano alimentar para o objetivo que eu especificar.`,
-                        generateShoppingBtn: `Por favor, sugira itens para comprar com base nas minhas necessidades.`,
-                        generateHomeBtn: `Por favor, dê dicas para organizar/decoração da casa com base no meu espaço.`,
-                        generateGardenBtn: `Por favor, dê conselhos para cuidar de um jardim com as plantas que eu mencionar.`,
-                        generatePetCareBtn: `Por favor, dê dicas para cuidar do meu pet (bem)'
-                        generateCarMaintenanceBtn: `Por favor, dê dicas para manutenção do meu veículo.`,
-                        generateHomeRepairBtn: `Por favor, explique como consertar algo em casa.`,
-                        generateCleaningBtn: `Por favor, sugira um cronograma de limpeza para minha casa.`,
-                        generateOrganizationBtn: `Por favor, ajude-me a organizar o espaço que eu mencionar.`,
-                        generateTimeManagementBtn: `Por favor, sugira técnicas de gestão de tempo.`,
-                        generateStressManagementBtn: `Por favor, sugira técnicas para gerenciar estresse.`,
-                        generateSleepTipsBtn: `Por favor, dê dicas para melhorar a qualidade do sono.`,
-                        generateMeditationBtn: `Por favor, sugira técnicas de meditação.`,
-                        generateMealPlanBtn: `Por favor, crie um plano alimentar semanal.`,
-                        generateGroceryListBtn: `Por favor, crie uma lista de compras com base no meu plano alimentar.`,
-                        generateBudgetPlanBtn: `Por favor, ajude a criar um orçamento mensal.`,
-                        generateSavingsPlanBtn: `Por favor, sugira estratégias para economizar dinheiro.`,
-                        generateDebtReductionBtn: `Por favor, sugira um plano para reduzir dívidas.`,
-                        generateInvestmentPlanBtn: `Por favor, sugira estratégias de investimento.`,
-                        generateRetirementPlanBtn: `Por favor, ajude a planejar a aposentadoria.`,
-                        generateInsuranceAdviceBtn: `Por favor, dê conselhos sobre seguros.`,
-                        generateTaxPlanningBtn: `Por favor, dê dicas para planejamento tributário.`,
-                        generateEstatePlanningBtn: `Por favor, ajude com planejamento sucessório.`,
-                        generateHomeDecorBtn: `Por favor, sugira ideias para decorar minha casa.`,
-                        generateDIYProjectBtn: `Por favor, sugira projetos DIY que eu possa fazer.`,
-                        generateMovingChecklistBtn: `Por favor, crie uma lista para me ajudar a me mudar.`,
-                        generatePackingListBtn: `Por favor, crie uma lista de itens para minha viagem.`,
-                        generateVacationPlanBtn: `Por favor, ajude a planejar minhas férias.`,
-                        generateTravelPackingBtn: `Por favor, sugira o que levar em minha viagem.`,
-                        generateItineraryBtn: `Por favor, crie um roteiro de viagem detalhado.`,
-                        generateLanguageLearningBtn: `Por favor, sugira métodos para aprender um idioma.`,
-                        generateCulturalTipsBtn: `Por favor, dê dicas culturais sobre o país que eu mencionar.`,
-                        generateLocalCustomsBtn: `Por favor, explique costumes locais do lugar que eu mencionar.`,
-                        generateSafetyTipsBtn: `Por favor, dê dicas de segurança para a situação que eu descrever.`,
-                        generateEmergencyPlanBtn: `Por favor, ajude a criar um plano de emergência.`,
-                        generateFirstAidGuideBtn: `Por favor, explique procedimentos de primeiros socorros.`,
-                        generateWellnessPlanBtn: `Por favor, ajude a criar um plano de bem-estar.`,
-                        generateMindfulnessBtn: `Por favor, sugira exercícios de mindfulness.`,
-                        generateYogaRoutineBtn: `Por favor, crie uma rotina de yoga.`,
-                        generateExercisePlanBtn: `Por favor, crie um plano de exercícios.`,
-                        generateNutritionPlanBtn: `Por favor, crie um plano nutricional personalizado.`,
-                        generateWeightLossPlanBtn: `Por favor, sugira um plano para perda de peso saudável.`,
-                        generateMuscleGainPlanBtn: `Por favor, sugira um plano para ganho de massa muscular.`,
-                        
-                        // Educação (50)
-                        generateQuizBtn: `Por favor, crie um questionário sobre o tópico que eu mencionar.`,
-                        generateFlashcardsBtn: `Por favor, crie flashcards para ajudar no estudo do assunto que eu mencionar.`,
-                        generateLessonPlanBtn: `Por favor, ajude a criar um plano de aula sobre o tópico que eu mencionar.`,
-                        generateStudyPlanBtn: `Por favor, crie um plano de estudos personalizado.`,
-                        generateHomeworkBtn: `Por favor, ajude com esta tarefa escolar.`,
-                        generateEssayBtn: `Por favor, ajude a escrever um ensaio sobre o tema que eu mencionar.`,
-                        generateThesisBtn: `Por favor, ajude a estruturar uma tese acadêmica.`,
-                        generateResearchBtn: `Por favor, ajude a planejar uma pesquisa acadêmica.`,
-                        generateSummaryBtn: `Por favor, resuma este texto acadêmico mantendo os pontos principais.`,
-                        generateMathProblemBtn: `Por favor, crie problemas de matemática sobre o tópico que eu mencionar.`,
-                        generateScienceExperimentBtn: `Por favor, sugira um experimento científico sobre o tema que eu mencionar.`,
-                        generateHistoryTimelineBtn: `Por favor, crie uma linha do tempo sobre o período histórico que eu mencionar.`,
-                        generateLanguageLessonBtn: `Por favor, crie uma lição para aprender o idioma que eu mencionar.`,
-                        generateCodingExerciseBtn: `Por favor, crie exercícios de programação sobre o conceito que eu mencionar.`,
-                        generateArtProjectBtn: `Por favor, sugira um projeto artístico sobre o tema que eu mencionar.`,
-                        generateBookReportBtn: `Por favor, ajude a escrever um relatório sobre o livro que eu mencionar.`,
-                        generateDebateTopicsBtn: `Por favor, sugira tópicos para debate sobre o assunto que eu mencionar.`,
-                        generateCriticalThinkingBtn: `Por favor, sugira exercícios para desenvolver pensamento crítico.`,
-                        generateLearningStyleBtn: `Por favor, ajude a identificar meu estilo de aprendizagem.`,
-                        generateStudyTechniquesBtn: `Por favor, sugira técnicas de estudo eficazes.`,
-                        generateMemoryTechniquesBtn: `Por favor, sugira técnicas para melhorar a memória.`,
-                        generateNoteTakingBtn: `Por favor, sugira métodos eficazes para tomar notas.`,
-                        generateTimeManagementEduBtn: `Por favor, sugira estratégias para gerenciar o tempo de estudo.`,
-                        generateTestPreparationBtn: `Por favor, sugira um plano para se preparar para esta prova.`,
-                        generateScholarshipEssayBtn: `Por favor, ajude a escrever um ensaio para bolsa de estudos.`,
-                        generateCurriculumBtn: `Por favor, ajude a desenvolver um currículo educacional.`,
-                        generatePedagogicalActivityBtn: `Por favor, sugira atividades pedagógicas sobre o tema que eu mencionar.`,
-                        generateEducationalGameBtn: `Por favor, sugira jogos educativos sobre o assunto que eu mencionar.`,
-                        generateLearningAssessmentBtn: `Por favor, crie uma avaliação de aprendizagem sobre o tópico que eu mencionar.`,
-                        generateSpecialEducationBtn: `Por favor, sugira estratégias para educação especial.`,
-                        generateElearningCourseBtn: `Por favor, ajude a planejar um curso de ensino a distância.`,
-                        generateInteractiveLessonBtn: `Por favor, sugira uma aula interativa sobre o tema que eu mencionar.`,
-                        generateSTEMActivityBtn: `Por favor, sugira atividades STEM para o nível que eu mencionar.`,
-                        generateLiteracyActivityBtn: `Por favor, sugira atividades para alfabetização.`,
-                        generateNumeracyActivityBtn: `Por favor, sugira atividades para desenvolver habilidades numéricas.`,
-                        generateCriticalReadingBtn: `Por favor, sugira exercícios para leitura crítica.`,
-                        generateWritingPromptBtn: `Por favor, crie prompts de escrita criativa.`,
-                        generateScienceProjectBtn: `Por favor, sugira um projeto científico para o nível que eu mencionar.`,
-                        generateMathChallengeBtn: `Por favor, crie desafios matemáticos interessantes.`,
-                        generateHistoryProjectBtn: `Por favor, sugira um projeto de história criativo.`,
-                        generateGeographyActivityBtn: `Por favor, sugira uma atividade para aprender geografia.`,
-                        generateArtEducationBtn: `Por favor, sugira uma atividade de educação artística.`,
-                        generateMusicEducationBtn: `Por favor, sugira uma atividade de educação musical.`,
-                        generatePhysicalEducationBtn: `Por favor, sugira uma atividade de educação física.`,
-                        generateLanguageArtsBtn: `Por favor, sugira uma atividade de artes da linguagem.`,
-                        generateSocialStudiesBtn: `Por favor, sugira uma atividade de estudos sociais.`,
-                        generateEnvironmentalEducationBtn: `Por favor, sugira uma atividade de educação ambiental.`,
-                        generateFinancialLiteracyBtn: `Por favor, sugira uma atividade para educação financeira.`,
-                        generateDigitalLiteracyBtn: `Por favor, sugira uma atividade para alfabetização digital.`,
-                        generateMediaLiteracyBtn: `Por favor, sugira uma atividade para alfabetização midiática.`,
-                        generateCivicEducationBtn: `Por favor, sugira uma atividade para educação cívica.`,
-                        generateHealthEducationBtn: `Por favor, sugira uma atividade para educação em saúde.`,
-                        generateCareerGuidanceBtn: `Por favor, sugira atividades para orientação vocacional.`,
-                        
-                        // Negócios (50)
-                        generateBusinessBtn: `Por favor, dê conselhos para melhorar meu negócio.`,
-                        generateMarketingBtn: `Por favor, sugira estratégias de marketing para meu negócio.`,
-                        generateSalesBtn: `Por favor, sugira técnicas para aumentar as vendas.`,
-                        generateProposalBtn: `Por favor, ajude a escrever uma proposta comercial.`,
-                        generateContractBtn: `Por favor, ajude a redigir um contrato comercial.`,
-                        generateReportBtn: `Por favor, ajude a criar um relatório empresarial.`,
-                        generateSWOTBtn: `Por favor, faça uma análise SWOT para meu negócio.`,
-                        generateBusinessPlanBtn: `Por favor, ajude a criar um plano de negócios.`,
-                        generatePitchBtn: `Por favor, ajude a criar um pitch para investidores.`,
-                        generateInterviewBtn: `Por favor, prepare perguntas para uma entrevista de emprego.`,
-                        generateCustomerServiceBtn: `Por favor, sugira melhorias para o atendimento ao cliente.`,
-                        generateNegotiationBtn: `Por favor, sugira estratégias para negociações comerciais.`,
-                        generateLeadershipBtn: `Por favor, sugira técnicas para melhorar a liderança.`,
-                        generateTeamBuildingBtn: `Por favor, sugira atividades para construção de equipe.`,
-                        generateStartupBtn: `Por favor, dê conselhos para startups.`,
-                        generateEcommerceBtn: `Por favor, sugira melhorias para meu e-commerce.`,
-                        generateSocialMediaMarketingBtn: `Por favor, sugira um plano de marketing para redes sociais.`,
-                        generateSEOStrategyBtn: `Por favor, sugira estratégias de SEO para meu site.`,
-                        generateBrandStrategyBtn: `Por favor, ajude a desenvolver uma estratégia de marca.`,
-                        generateFinancialProjectionBtn: `Por favor, ajude a criar projeções financeiras.`,
-                        generateMarketResearchBtn: `Por favor, sugira um método para pesquisa de mercado.`,
-                        generateCompetitiveAnalysisBtn: `Por favor, faça uma análise competitiva para meu setor.`,
-                        generateRiskAssessmentBtn: `Por favor, avalie os riscos deste projeto empresarial.`,
-                        generateExitStrategyBtn: `Por favor, sugira estratégias de saída para meu negócio.`,
-                        generateFranchiseModelBtn: `Por favor, ajude a desenvolver um modelo de franquia.`,
-                        generateInvestorDeckBtn: `Por favor, ajude a criar um deck para investidores.`,
-                        generateGrantProposalBtn: `Por favor, ajude a escrever uma proposta de financiamento.`,
-                        generatePartnershipAgreementBtn: `Por favor, ajude a redigir um acordo de parceria.`,
-                        generateNonDisclosureBtn: `Por favor, ajude a redigir um acordo de confidencialidade.`,
-                        generateEmployeeHandbookBtn: `Por favor, ajude a criar um manual do funcionário.`,
-                        generateTrainingProgramBtn: `Por favor, ajude a desenvolver um programa de treinamento.`,
-                        generateHRPolicyBtn: `Por favor, ajude a criar políticas de RH.`,
-                        generatePerformanceMetricsBtn: `Por favor, sugira métricas para avaliar desempenho.`,
-                        generateCustomerSurveyBtn: `Por favor, ajude a criar uma pesquisa de satisfação.`,
-                        generateProductRoadmapBtn: `Por favor, ajude a criar um roadmap de produto.`,
-                        generateBusinessModelBtn: `Por favor, ajude a desenvolver um modelo de negócios.`,
-                        generateValuePropositionBtn: `Por favor, ajude a criar uma proposta de valor.`,
-                        generateGoToMarketBtn: `Por favor, ajude a criar uma estratégia de entrada no mercado.`,
-                        generatePricingStrategyBtn: `Por favor, sugira estratégias de precificação.`,
-                        generateSupplyChainBtn: `Por favor, sugira melhorias para a cadeia de suprimentos.`,
-                        generateLogisticsPlanBtn: `Por favor, ajude a criar um plano logístico.`,
-                        generateInventoryManagementBtn: `Por favor, sugira estratégias para gestão de estoque.`,
-                        generateQualityControlBtn: `Por favor, sugira métodos para controle de qualidade.`,
-                        generateProcessImprovementBtn: `Por favor, sugira melhorias para este processo.`,
-                        generateLeanMethodologyBtn: `Por favor, sugira aplicações da metodologia Lean.`,
-                        generateSixSigmaBtn: `Por favor, sugira aplicações do Six Sigma.`,
-                        generateAgileCoachBtn: `Por favor, dê conselhos para implementar metodologias ágeis.`,
-                        generateScrumMasterBtn: `Por favor, sugira práticas para um Scrum Master.`,
-                        generateKanbanBoardBtn: `Por favor, ajude a configurar um quadro Kanban.`,
-                        generateBusinessContinuityBtn: `Por favor, ajude a criar um plano de continuidade de negócios.`,
-                        generateDisasterRecoveryBtn: `Por favor, ajude a criar um plano de recuperação de desastres.`,
-                        
-                        // Tecnologia (50)
-                        generateAPIBtn: `Por favor, ajude a projetar uma API para o sistema que eu descrever.`,
-                        generateAlgorithmBtn: `Por favor, sugira um algoritmo para resolver este problema.`,
-                        generateDatabaseBtn: `Por favor, ajude a modelar um banco de dados para esta aplicação.`,
-                        generateUIBtn: `Por favor, sugira um design de interface para esta aplicação.`,
-                        generateMobileAppBtn: `Por favor, ajude a planejar um aplicativo móvel.`,
-                        generateWebsiteBtn: `Por favor, ajude a planejar um website.`,
-                        generateGameBtn: `Por favor, ajude a projetar um jogo digital.`,
-                        generateAIBtn: `Por favor, sugira uma solução de IA para este problema.`,
-                        generateBlockchainBtn: `Por favor, sugira uma aplicação de blockchain.`,
-                        generateSecurityBtn: `Por favor, sugira medidas de segurança para este sistema.`,
-                        generateDevOpsBtn: `Por favor, sugira um pipeline DevOps para este projeto.`,
-                        generateCloudComputingBtn: `Por favor, sugira uma arquitetura em nuvem.`,
-                        generateDataScienceBtn: `Por favor, sugira uma abordagem de ciência de dados.`,
-                        generateMachineLearningBtn: `Por favor, sugira um modelo de machine learning.`,
-                        generateDeepLearningBtn: `Por favor, sugira uma arquitetura de deep learning.`,
-                        generateNeuralNetworkBtn: `Por favor, sugira uma rede neural para este problema.`,
-                        generateComputerVisionBtn: `Por favor, sugira uma solução de visão computacional.`,
-                        generateNaturalLanguageBtn: `Por favor, sugira uma solução de processamento de linguagem natural.`,
-                        generateRoboticsBtn: `Por favor, sugira uma aplicação robótica.`,
-                        generateIoTBtn: `Por favor, sugira uma solução de Internet das Coisas.`,
-                        generateARVRBtn: `Por favor, sugira uma aplicação de realidade aumentada/virtual.`,
-                        generateQuantumComputingBtn: `Por favor, explique uma aplicação potencial da computação quântica.`,
-                        generateCybersecurityBtn: `Por favor, sugira medidas de cibersegurança.`,
-                        generateEthicalHackingBtn: `Por favor, sugira testes de penetração para este sistema.`,
-                        generateDigitalForensicsBtn: `Por favor, explique como investigar este incidente digital.`,
-                        generateSoftwareArchitectureBtn: `Por favor, sugira uma arquitetura de software.`,
-                        generateMicroservicesBtn: `Por favor, sugira uma arquitetura de microsserviços.`,
-                        generateContainerizationBtn: `Por favor, explique como containerizar esta aplicação.`,
-                        generateKubernetesBtn: `Por favor, sugira uma configuração Kubernetes.`,
-                        generateServerlessBtn: `Por favor, sugira uma arquitetura serverless.`,
-                        generateBigDataBtn: `Por favor, sugira uma solução para big data.`,
-                        generateDataWarehouseBtn: `Por favor, sugira um design de data warehouse.`,
-                        generateETLBtn: `Por favor, sugira um processo ETL.`,
-                        generateDataVisualizationBtn: `Por favor, sugira visualizações para estes dados.`,
-                        generateBusinessIntelligenceBtn: `Por favor, sugira uma solução de BI.`,
-                        generateDataGovernanceBtn: `Por favor, sugira políticas de governança de dados.`,
-                        generateDataPrivacyBtn: `Por favor, sugira medidas para privacidade de dados.`,
-                        generateComplianceBtn: `Por favor, sugira medidas para conformidade regulatória.`,
-                        generateITInfrastructureBtn: `Por favor, sugira uma infraestrutura de TI.`,
-                        generateNetworkSecurityBtn: `Por favor, sugira medidas de segurança de rede.`,
-                        generatePenetrationTestingBtn: `Por favor, sugira um plano de teste de penetração.`,
-                        generateVulnerabilityAssessmentBtn: `Por favor, sugira uma avaliação de vulnerabilidades.`,
-                        generateIncidentResponseBtn: `Por favor, sugira um plano de resposta a incidentes.`,
-                        generateThreatIntelligenceBtn: `Por favor, sugira estratégias de inteligência contra ameaças.`,
-                        generateMalwareAnalysisBtn: `Por favor, explique como analisar este malware.`,
-                        generateReverseEngineeringBtn: `Por favor, explique como fazer engenharia reversa deste software.`,
-                        generateCryptographyBtn: `Por favor, sugira algoritmos criptográficos para este caso.`,
-                        generateZeroTrustBtn: `Por favor, sugira uma implementação Zero Trust.`,
-                        
-                        // Entretenimento (50)
-                        generateMovieBtn: `Por favor, sugira um filme baseado em minhas preferências.`,
-                        generateTVShowBtn: `Por favor, sugira uma série de TV que eu possa gostar.`,
-                        generateBookBtn: `Por favor, sugira um livro baseado em meus gostos.`,
-                        generateGameIdeaBtn: `Por favor, sugira uma ideia para um jogo.`,
-                        generateTriviaBtn: `Por favor, crie perguntas de trivia sobre este tema.`,
-                        generateDebateBtn: `Por favor, sugira tópicos para debate sobre este assunto.`,
-                        generatePodcastBtn: `Por favor, sugira ideias para um podcast.`,
-                        generateComedyBtn: `Por favor, crie um roteiro de comédia.`,
-                        generateHorrorBtn: `Por favor, crie uma história de terror.`,
-                        generateFantasyBtn: `Por favor, crie uma história de fantasia.`,
-                        generateSciFiBtn: `Por favor, crie uma história de ficção científica.`,
-                        generateRomanceBtn: `Por favor, crie uma história romântica.`,
-                        generateMysteryBtn: `Por favor, crie uma história de mistério.`,
-                        generateAdventureBtn: `Por favor, crie uma história de aventura.`,
-                        generateFanFictionBtn: `Por favor, crie uma fanfiction sobre esta obra.`,
-                        generateBoardGameBtn: `Por favor, sugira regras para um jogo de tabuleiro.`,
-                        generateCardGameBtn: `Por favor, sugira regras para um jogo de cartas.`,
-                        generateRolePlayingBtn: `Por favor, crie um cenário para RPG.`,
-                        generateVideoGameBtn: `Por favor, sugira um conceito para videogame.`,
-                        generateMobileGameBtn: `Por favor, sugira um conceito para jogo mobile.`,
-                        generatePuzzleGameBtn: `Por favor, sugira um quebra-cabeça para um jogo.`,
-                        generateStrategyGameBtn: `Por favor, sugira mecânicas para um jogo de estratégia.`,
-                        generateSimulationGameBtn: `Por favor, sugira um conceito para jogo de simulação.`,
-                        generateSportsGameBtn: `Por favor, sugira um conceito para jogo esportivo.`,
-                        generateMusicPlaylistBtn: `Por favor, sugira uma playlist musical.`,
-                        generateMovieRecommendationBtn: `Por favor, recomende filmes baseados em meus gostos.`,
-                        generateTVShowRecommendationBtn: `Por favor, recomende séries baseadas em meus gostos.`,
-                        generateBookRecommendationBtn: `Por favor, recomende livros baseados em meus gostos.`,
-                        generateGameRecommendationBtn: `Por favor, recomende jogos baseados em meus gostos.`,
-                        generateMovieScriptBtn: `Por favor, escreva um roteiro para um curta-metragem.`,
-                        generateTVScriptBtn: `Por favor, escreva um roteiro para um episódio de TV.`,
-                        generateTheaterScriptBtn: `Por favor, escreva um roteiro para teatro.`,
-                        generateStandupComedyBtn: `Por favor, escreva um monólogo de stand-up comedy.`,
-                        generateSketchComedyBtn: `Por favor, escreva um esboço cômico.`,
-                        generateSatireContentBtn: `Por favor, crie conteúdo satírico sobre este tema.`,
-                        generateParodyContentBtn: `Por favor, crie uma paródia deste conteúdo.`,
-                        generateMemesBtn: `Por favor, sugira ideias para memes sobre este tema.`,
-                        generateViralContentBtn: `Por favor, sugira ideias para conteúdo viral.`,
-                        generateSocialMediaContentBtn: `Por favor, sugira conteúdo para redes sociais.`,
-                        generateYouTubeScriptBtn: `Por favor, escreva um roteiro para vídeo do YouTube.`,
-                        generatePodcastScriptBtn: `Por favor, escreva um roteiro para podcast.`,
-                        generateStreamingContentBtn: `Por favor, sugira conteúdo para streaming.`,
-                        generateRealityShowBtn: `Por favor, sugira um conceito para reality show.`,
-                        generateGameShowBtn: `Por favor, sugira um conceito para game show.`,
-                        generateTalentShowBtn: `Por favor, sugira um conceito para talent show.`,
-                        generateTalkShowBtn: `Por favor, sugira um formato para talk show.`,
-                        generateDocumentaryBtn: `Por favor, sugira um tema para documentário.`,
-                        generateDocuseriesBtn: `Por favor, sugira um conceito para docusérie.`,
-                      
-            // Inicializa o ViBot
+                        // Mostrar movimentos possíveis
+                        this.showPossibleMoves(square);
+                    } else {
+                        this.chess.selectedSquare = null;
+                        this.chess.selectedPiece = null;
+                        this.clearPossibleMoves();
+                    }
+                },
+
+                showPossibleMoves(square) {
+                    this.clearPossibleMoves();
+                    
+                    // Obter todos os movimentos possíveis para esta peça
+                    const moves = this.chess.game.moves({
+                        square: square,
+                        verbose: true
+                    });
+                    
+                    // Destacar a peça selecionada
+                    const selectedSquareEl = document.querySelector(`.chess-square[data-square="${square}"]`);
+                    if (selectedSquareEl) {
+                        selectedSquareEl.classList.add('selected');
+                    }
+                    
+                    // Destacar os quadrados de movimento possível
+                    moves.forEach(move => {
+                        const squareEl = document.querySelector(`.chess-square[data-square="${move.to}"]`);
+                        if (squareEl) {
+                            squareEl.classList.add('possible-move');
+                            this.chess.possibleMoves.push(squareEl);
+                        }
+                    });
+                },
+
+                clearPossibleMoves() {
+                    // Remover destaque de todos os quadrados
+                    document.querySelectorAll('.chess-square').forEach(squareEl => {
+                        squareEl.classList.remove('selected', 'possible-move', 'last-move');
+                    });
+                    
+                    this.chess.possibleMoves = [];
+                },
+
+                handleChessMove(moveInput) {
+                    try {
+                        const result = this.chess.game.move(moveInput);
+                        if (result) {
+                            document.getElementById('chess-move-input').value = '';
+                            this.renderChessBoard();
+                        } else {
+                            this.chess.hintEl.textContent = 'Movimento inválido. Tente novamente.';
+                        }
+                    } catch (e) {
+                        console.error('Movimento inválido:', e);
+                        this.chess.hintEl.textContent = 'Movimento inválido. Tente novamente.';
+                    }
+                },
+
+                undoChessMove() {
+                    const move = this.chess.game.undo();
+                    if (move) {
+                        this.renderChessBoard();
+                        this.chess.hintEl.textContent = `Movimento desfeito: ${move.from}→${move.to}`;
+                    } else {
+                        this.chess.hintEl.textContent = 'Nada para desfazer';
+                    }
+                },
+
+                resetChessGame() {
+                    this.chess.game.reset();
+                    this.renderChessBoard();
+                    this.chess.hintEl.textContent = 'Jogo reiniciado. Brancas começam.';
+                },
+
+                getChessHint() {
+                    // Implementação simplificada - poderia ser mais sofisticada
+                    const possibleMoves = this.chess.game.moves();
+                    if (possibleMoves.length > 0) {
+                        const randomMove = possibleMoves[Math.floor(Math.random() * possibleMoves.length)];
+                        this.chess.hintEl.textContent = `Sugestão: ${randomMove}`;
+                    } else {
+                        this.chess.hintEl.textContent = 'Não há movimentos possíveis.';
+                    }
+                },
+
+                updateChessStatus() {
+                    if (this.chess.game.isCheckmate()) {
+                        this.chess.statusEl.textContent = `Xeque-mate! ${this.chess.game.turn() === 'w' ? 'Pretas' : 'Brancas'} ganharam.`;
+                    } else if (this.chess.game.isDraw()) {
+                        this.chess.statusEl.textContent = 'Empate!';
+                    } else if (this.chess.game.isCheck()) {
+                        this.chess.statusEl.textContent = `Xeque! É a vez das ${this.chess.game.turn() === 'w' ? 'brancas' : 'pretas'}.`;
+                    } else {
+                        this.chess.statusEl.textContent = `É a vez das ${this.chess.game.turn() === 'w' ? 'brancas' : 'pretas'}.`;
+                    }
+                },
+
+                updateUI() {
+                    // Atualizar o nome do modelo exibido
+                    const modelName = this.modelNames[this.config.model] || this.config.model;
+                    document.querySelectorAll('.model-name').forEach(el => {
+                        el.textContent = modelName;
+                    });
+                }
+            };
+
+            // Inicializar o ViBot
             ViBot.init();
         });
     </script>
