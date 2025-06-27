@@ -1,6 +1,3 @@
-Vou corrigir o código para que todas as funcionalidades funcionem corretamente. O principal problema está na sintaxe do JavaScript, especialmente na definição dos objetos e na inicialização. Aqui está a versão corrigida:
-
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -883,10 +880,10 @@ Vou corrigir o código para que todas as funcionalidades funcionem corretamente.
 
         <div id="tools-sidebar">
             <div class="tools-panel">
-                <!-- Categoria: Produtividade (50 ferramentas) -->
+                <!-- Categoria: Produtividade -->
                 <div class="category-container">
                     <button class="category-btn produtividade-btn" onclick="toggleCategory('produtividade')">
-                        <span><i class="fas fa-briefcase"></i> Produtividade (50)</span>
+                        <span><i class="fas fa-briefcase"></i> Produtividade</span>
                         <i class="fas fa-chevron-right"></i>
                     </button>
                     <div class="category-tools produtividade-tools" id="produtividade-tools">
@@ -905,148 +902,13 @@ Vou corrigir o código para que todas as funcionalidades funcionem corretamente.
                         <button class="tools-panel-btn produtividade-tool" id="generateCodeBtn">
                             <i class="fas fa-code"></i> Gerador de Código
                         </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateIdeasBtn">
-                            <i class="fas fa-lightbulb"></i> Gerador de Ideias
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="analyzeDataBtn">
-                            <i class="fas fa-chart-bar"></i> Analisador de Dados
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="createContentBtn">
-                            <i class="fas fa-pencil-alt"></i> Criador de Conteúdo
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="explainConceptBtn">
-                            <i class="fas fa-book"></i> Explicador de Conceitos
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="solveProblemBtn">
-                            <i class="fas fa-search"></i> Solucionador de Problemas
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateScheduleBtn">
-                            <i class="fas fa-calendar"></i> Gerador de Cronogramas
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateMeetingBtn">
-                            <i class="fas fa-users"></i> Planejador de Reuniões
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generatePresentationBtn">
-                            <i class="fas fa-project-diagram"></i> Criador de Apresentações
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateChecklistBtn">
-                            <i class="fas fa-tasks"></i> Gerador de Checklists
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateWorkflowBtn">
-                            <i class="fas fa-network-wired"></i> Designer de Fluxos
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateBudgetBtn">
-                            <i class="fas fa-calculator"></i> Criador de Orçamentos
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateInvoiceBtn">
-                            <i class="fas fa-file-invoice"></i> Gerador de Faturas
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateResumeBtn">
-                            <i class="fas fa-file-user"></i> Criador de Currículos
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateCoverLetterBtn">
-                            <i class="fas fa-envelope-open-text"></i> Escritor de Cartas
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateJobDescriptionBtn">
-                            <i class="fas fa-briefcase"></i> Criador de Descrições
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generatePerformanceReviewBtn">
-                            <i class="fas fa-clipboard-check"></i> Avaliador de Desempenho
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateKPIReportBtn">
-                            <i class="fas fa-chart-line"></i> Gerador de KPIs
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateBusinessStrategyBtn">
-                            <i class="fas fa-chess"></i> Planejador Estratégico
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateBusinessPlanBtn">
-                            <i class="fas fa-map"></i> Criador de Planos
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generatePitchBtn">
-                            <i class="fas fa-comment-dollar"></i> Desenvolvedor de Pitches
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateInterviewBtn">
-                            <i class="fas fa-comments"></i> Gerador de Entrevistas
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateCustomerServiceBtn">
-                            <i class="fas fa-headset"></i> Consultor de Atendimento
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateNegotiationBtn">
-                            <i class="fas fa-handshake"></i> Estrategista de Negociações
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateLeadershipBtn">
-                            <i class="fas fa-user-tie"></i> Mentor de Liderança
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateTeamBuildingBtn">
-                            <i class="fas fa-people-arrows"></i> Facilitador de Team Building
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateStartupBtn">
-                            <i class="fas fa-rocket"></i> Consultor para Startups
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateEcommerceBtn">
-                            <i class="fas fa-shopping-cart"></i> Estrategista de E-commerce
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateSocialMediaMarketingBtn">
-                            <i class="fas fa-share-alt"></i> Planejador de Marketing
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateSEOStrategyBtn">
-                            <i class="fas fa-search-location"></i> Especialista em SEO
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateBrandStrategyBtn">
-                            <i class="fas fa-trademark"></i> Designer de Estratégias
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateFinancialProjectionBtn">
-                            <i class="fas fa-coins"></i> Criador de Projeções
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateSWOTBtn">
-                            <i class="fas fa-chess-board"></i> Analista SWOT
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateMarketResearchBtn">
-                            <i class="fas fa-poll"></i> Pesquisador de Mercado
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateSalesFunnelBtn">
-                            <i class="fas fa-filter"></i> Designer de Funil
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateCustomerPersonaBtn">
-                            <i class="fas fa-user-tag"></i> Criador de Personas
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateCompetitiveAnalysisBtn">
-                            <i class="fas fa-chess-knight"></i> Analista Competitivo
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateRiskAssessmentBtn">
-                            <i class="fas fa-exclamation-triangle"></i> Avaliador de Riscos
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateExitStrategyBtn">
-                            <i class="fas fa-door-open"></i> Planejador de Estratégias
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateFranchiseModelBtn">
-                            <i class="fas fa-store"></i> Desenvolvedor de Franquias
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateInvestorDeckBtn">
-                            <i class="fas fa-file-powerpoint"></i> Criador de Decks
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateGrantProposalBtn">
-                            <i class="fas fa-file-signature"></i> Redator de Propostas
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generatePartnershipAgreementBtn">
-                            <i class="fas fa-handshake"></i> Desenvolvedor de Acordos
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateNonDisclosureBtn">
-                            <i class="fas fa-file-contract"></i> Redator de NDAs
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateEmployeeHandbookBtn">
-                            <i class="fas fa-book-reader"></i> Criador de Manuais
-                        </button>
-                        <button class="tools-panel-btn produtividade-tool" id="generateTrainingProgramBtn">
-                            <i class="fas fa-graduation-cap"></i> Desenvolvedor de Treinamentos
-                        </button>
                     </div>
                 </div>
 
-                <!-- Categoria: Criatividade (50 ferramentas) -->
+                <!-- Categoria: Criatividade -->
                 <div class="category-container">
                     <button class="category-btn criatividade-btn" onclick="toggleCategory('criatividade')">
-                        <span><i class="fas fa-paint-brush"></i> Criatividade (50)</span>
+                        <span><i class="fas fa-paint-brush"></i> Criatividade</span>
                         <i class="fas fa-chevron-right"></i>
                     </button>
                     <div class="category-tools criatividade-tools" id="criatividade-tools">
@@ -1059,950 +921,9 @@ Vou corrigir o código para que todas as funcionalidades funcionem corretamente.
                         <button class="tools-panel-btn criatividade-tool" id="generateJokeBtn">
                             <i class="fas fa-laugh"></i> Contador de Piadas
                         </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateScriptBtn">
-                            <i class="fas fa-film"></i> Roteirista
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateSongBtn">
-                            <i class="fas fa-music"></i> Compositor Musical
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateSpeechBtn">
-                            <i class="fas fa-microphone"></i> Redator de Discursos
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateArtBtn">
-                            <i class="fas fa-palette"></i> Designer de Arte
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateDesignBtn">
-                            <i class="fas fa-drafting-compass"></i> Designer Gráfico
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateBrandingBtn">
-                            <i class="fas fa-trademark"></i> Criador de Identidade
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateSloganBtn">
-                            <i class="fas fa-quote-right"></i> Gerador de Slogans
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateCharacterBtn">
-                            <i class="fas fa-user-astronaut"></i> Criador de Personagens
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateWorldBuildingBtn">
-                            <i class="fas fa-globe-americas"></i> Construtor de Mundos
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generatePlotTwistBtn">
-                            <i class="fas fa-random"></i> Inventor de Plot Twists
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateDialogueBtn">
-                            <i class="fas fa-comments"></i> Escritor de Diálogos
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateHaikuBtn">
-                            <i class="fas fa-mountain"></i> Poeta Haicai
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateLimerickBtn">
-                            <i class="fas fa-grin-tongue"></i> Escritor de Limeriques
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateAcrosticBtn">
-                            <i class="fas fa-text-height"></i> Criador de Acrósticos
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateMetaphorBtn">
-                            <i class="fas fa-project-diagram"></i> Inventor de Metáforas
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateRiddleBtn">
-                            <i class="fas fa-question"></i> Criador de Charadas
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generatePuzzleBtn">
-                            <i class="fas fa-puzzle-piece"></i> Designer de Quebra-Cabeças
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateComicScriptBtn">
-                            <i class="fas fa-comic"></i> Roteirista de Quadrinhos
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateScreenplayBtn">
-                            <i class="fas fa-video"></i> Roteirista Cinematográfico
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateTheaterPlayBtn">
-                            <i class="fas fa-theater-masks"></i> Dramaturgo
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateRadioDramaBtn">
-                            <i class="fas fa-broadcast-tower"></i> Escritor de Radionovelas
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateChildrenStoryBtn">
-                            <i class="fas fa-child"></i> Contador de Histórias Infantis
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateFairyTaleBtn">
-                            <i class="fas fa-dragon"></i> Escritor de Contos de Fadas
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateMythologyBtn">
-                            <i class="fas fa-monument"></i> Criador de Mitologias
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateUrbanLegendBtn">
-                            <i class="fas fa-ghost"></i> Inventor de Lendas Urbanas
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateAllegoryBtn">
-                            <i class="fas fa-brain"></i> Escritor de Alegorias
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateParableBtn">
-                            <i class="fas fa-church"></i> Criador de Parábolas
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateFableBtn">
-                            <i class="fas fa-paw"></i> Fabularista
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateSatireBtn">
-                            <i class="fas fa-grin-squint-tears"></i> Satirista
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateParodyBtn">
-                            <i class="fas fa-grin-tongue-squint"></i> Parodista
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateSonnetBtn">
-                            <i class="fas fa-feather-alt"></i> Sonetista
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateOdeBtn">
-                            <i class="fas fa-feather"></i> Escritor de Odes
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateElegyBtn">
-                            <i class="fas fa-sad-tear"></i> Elegista
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateBalladBtn">
-                            <i class="fas fa-book-dead"></i> Escritor de Baladas
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateEpicBtn">
-                            <i class="fas fa-chess-rook"></i> Poeta Épico
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateFreeVerseBtn">
-                            <i class="fas fa-align-left"></i> Poeta de Verso Livre
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateConcretePoetryBtn">
-                            <i class="fas fa-shapes"></i> Poeta Concreto
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateBlackoutPoetryBtn">
-                            <i class="fas fa-highlighter"></i> Artista de Poesia
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateFlashFictionBtn">
-                            <i class="fas fa-bolt"></i> Microcontista
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateSixWordStoryBtn">
-                            <i class="fas fa-text-width"></i> Escritor de 6 Palavras
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateTwitteratureBtn">
-                            <i class="fab fa-twitter"></i> Twitteraturista
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateInteractiveFictionBtn">
-                            <i class="fas fa-code-branch"></i> Escritor Interativo
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateChooseYourAdventureBtn">
-                            <i class="fas fa-map-signs"></i> Autor de Aventuras
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateDrabbleBtn">
-                            <i class="fas fa-align-center"></i> Drabulista
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateVignetteBtn">
-                            <i class="fas fa-image"></i> Escritor de Vinhetas
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateStreamOfConsciousnessBtn">
-                            <i class="fas fa-brain"></i> Fluxo de Consciência
-                        </button>
-                        <button class="tools-panel-btn criatividade-tool" id="generateEpistolaryBtn">
-                            <i class="fas fa-envelope"></i> Epistológrafo
-                        </button>
                     </div>
                 </div>
 
-                <!-- Categoria: Vida Diária (50 ferramentas) -->
-                <div class="category-container">
-                    <button class="category-btn vida-diaria-btn" onclick="toggleCategory('vida-diaria')">
-                        <span><i class="fas fa-home"></i> Vida Diária (50)</span>
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                    <div class="category-tools vida-diaria-tools" id="vida-diaria-tools">
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateRecipeBtn">
-                            <i class="fas fa-utensils"></i> Chef Virtual
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateWorkoutBtn">
-                            <i class="fas fa-dumbbell"></i> Personal Trainer
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateTravelBtn">
-                            <i class="fas fa-plane"></i> Planejador de Viagens
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateAdviceBtn">
-                            <i class="fas fa-hand-holding-heart"></i> Conselheiro Pessoal
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateParentingBtn">
-                            <i class="fas fa-baby"></i> Consultor de Parentalidade
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateFinanceBtn">
-                            <i class="fas fa-coins"></i> Consultor Financeiro
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateHealthBtn">
-                            <i class="fas fa-heartbeat"></i> Conselheiro de Saúde
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateDietBtn">
-                            <i class="fas fa-apple-alt"></i> Nutricionista Virtual
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateShoppingBtn">
-                            <i class="fas fa-shopping-cart"></i> Consultor de Compras
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateHomeBtn">
-                            <i class="fas fa-home"></i> Designer de Interiores
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateGardenBtn">
-                            <i class="fas fa-seedling"></i> Jardineiro Virtual
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generatePetCareBtn">
-                            <i class="fas fa-paw"></i> Consultor para Pets
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateCarMaintenanceBtn">
-                            <i class="fas fa-car"></i> Mecânico Virtual
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateHomeRepairBtn">
-                            <i class="fas fa-tools"></i> Técnico de Reparos
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateCleaningBtn">
-                            <i class="fas fa-broom"></i> Consultor de Limpeza
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateOrganizationBtn">
-                            <i class="fas fa-archive"></i> Organizador Profissional
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateTimeManagementBtn">
-                            <i class="fas fa-clock"></i> Consultor de Tempo
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateStressManagementBtn">
-                            <i class="fas fa-brain"></i> Especialista em Estresse
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateSleepTipsBtn">
-                            <i class="fas fa-bed"></i> Consultor do Sono
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateMeditationBtn">
-                            <i class="fas fa-spa"></i> Guia de Meditação
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateMealPlanBtn">
-                            <i class="fas fa-utensils"></i> Planejador de Refeições
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateGroceryListBtn">
-                            <i class="fas fa-list-alt"></i> Criador de Listas
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateBudgetPlanBtn">
-                            <i class="fas fa-wallet"></i> Planejador Financeiro
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateSavingsPlanBtn">
-                            <i class="fas fa-piggy-bank"></i> Consultor de Economias
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateDebtReductionBtn">
-                            <i class="fas fa-money-bill-wave"></i> Especialista em Dívidas
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateInvestmentPlanBtn">
-                            <i class="fas fa-chart-line"></i> Consultor de Investimentos
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateRetirementPlanBtn">
-                            <i class="fas fa-umbrella-beach"></i> Planejador de Aposentadoria
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateInsuranceAdviceBtn">
-                            <i class="fas fa-shield-alt"></i> Consultor de Seguros
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateTaxPlanningBtn">
-                            <i class="fas fa-file-invoice-dollar"></i> Especialista Tributário
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateEstatePlanningBtn">
-                            <i class="fas fa-home"></i> Consultor Sucessório
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateHomeDecorBtn">
-                            <i class="fas fa-couch"></i> Decorador de Interiores
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateDIYProjectBtn">
-                            <i class="fas fa-hammer"></i> Consultor de Projetos
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateMovingChecklistBtn">
-                            <i class="fas fa-truck-moving"></i> Planejador de Mudanças
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generatePackingListBtn">
-                            <i class="fas fa-suitcase"></i> Criador de Listas de Viagem
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateVacationPlanBtn">
-                            <i class="fas fa-umbrella-beach"></i> Organizador de Férias
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateTravelPackingBtn">
-                            <i class="fas fa-suitcase-rolling"></i> Consultor de Itens
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateItineraryBtn">
-                            <i class="fas fa-route"></i> Criador de Roteiros
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateLanguageLearningBtn">
-                            <i class="fas fa-language"></i> Tutor de Idiomas
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateCulturalTipsBtn">
-                            <i class="fas fa-globe-europe"></i> Guia Cultural
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateLocalCustomsBtn">
-                            <i class="fas fa-monument"></i> Consultor de Costumes
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateSafetyTipsBtn">
-                            <i class="fas fa-user-shield"></i> Conselheiro de Segurança
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateEmergencyPlanBtn">
-                            <i class="fas fa-first-aid"></i> Planejador de Emergências
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateFirstAidGuideBtn">
-                            <i class="fas fa-medkit"></i> Guia de Primeiros Socorros
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateWellnessPlanBtn">
-                            <i class="fas fa-heart"></i> Consultor de Bem-Estar
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateMindfulnessBtn">
-                            <i class="fas fa-brain"></i> Instrutor de Mindfulness
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateYogaRoutineBtn">
-                            <i class="fas fa-spa"></i> Instrutor de Yoga
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateExercisePlanBtn">
-                            <i class="fas fa-running"></i> Criador de Planos
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateNutritionPlanBtn">
-                            <i class="fas fa-apple-alt"></i> Nutricionista Personalizado
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateWeightLossPlanBtn">
-                            <i class="fas fa-weight"></i> Consultor de Perda de Peso
-                        </button>
-                        <button class="tools-panel-btn vida-diaria-tool" id="generateMuscleGainPlanBtn">
-                            <i class="fas fa-dumbbell"></i> Especialista em Ganho Muscular
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Categoria: Educação (50 ferramentas) -->
-                <div class="category-container">
-                    <button class="category-btn educacao-btn" onclick="toggleCategory('educacao')">
-                        <span><i class="fas fa-graduation-cap"></i> Educação (50)</span>
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                    <div class="category-tools educacao-tools" id="educacao-tools">
-                        <button class="tools-panel-btn educacao-tool" id="generateQuizBtn">
-                            <i class="fas fa-question-circle"></i> Criador de Questionários
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateFlashcardsBtn">
-                            <i class="fas fa-layer-group"></i> Gerador de Flashcards
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateLessonPlanBtn">
-                            <i class="fas fa-chalkboard-teacher"></i> Planejador de Aulas
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateStudyPlanBtn">
-                            <i class="fas fa-graduation-cap"></i> Criador de Planos de Estudo
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateHomeworkBtn">
-                            <i class="fas fa-book-reader"></i> Assistente de Tarefas
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateEssayBtn">
-                            <i class="fas fa-pen"></i> Redator de Ensaios
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateThesisBtn">
-                            <i class="fas fa-scroll"></i> Orientador de Teses
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateResearchBtn">
-                            <i class="fas fa-microscope"></i> Assistente de Pesquisa
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateSummaryBtn">
-                            <i class="fas fa-file-contract"></i> Resumidor Acadêmico
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateMathProblemBtn">
-                            <i class="fas fa-square-root-alt"></i> Criador de Problemas
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateScienceExperimentBtn">
-                            <i class="fas fa-flask"></i> Design de Experimentos
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateHistoryTimelineBtn">
-                            <i class="fas fa-history"></i> Criador de Linhas do Tempo
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateLanguageLessonBtn">
-                            <i class="fas fa-language"></i> Tutor de Idiomas
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateCodingExerciseBtn">
-                            <i class="fas fa-code"></i> Criador de Exercícios
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateArtProjectBtn">
-                            <i class="fas fa-paint-brush"></i> Design de Projetos
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateBookReportBtn">
-                            <i class="fas fa-book"></i> Assistente de Relatórios
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateDebateTopicsBtn">
-                            <i class="fas fa-comments"></i> Gerador de Tópicos
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateCriticalThinkingBtn">
-                            <i class="fas fa-brain"></i> Treinador de Pensamento
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateLearningStyleBtn">
-                            <i class="fas fa-user-graduate"></i> Analisador de Estilos
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateStudyTechniquesBtn">
-                            <i class="fas fa-book-open"></i> Consultor de Técnicas
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateMemoryTechniquesBtn">
-                            <i class="fas fa-brain"></i> Treinador de Memória
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateNoteTakingBtn">
-                            <i class="fas fa-sticky-note"></i> Consultor de Anotações
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateTimeManagementEduBtn">
-                            <i class="fas fa-clock"></i> Planejador de Tempo
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateTestPreparationBtn">
-                            <i class="fas fa-clipboard-check"></i> Preparador para Testes
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateScholarshipEssayBtn">
-                            <i class="fas fa-graduation-cap"></i> Redator de Ensaios
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateCurriculumBtn">
-                            <i class="fas fa-book"></i> Designer Curricular
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generatePedagogicalActivityBtn">
-                            <i class="fas fa-chalkboard"></i> Criador de Atividades
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateEducationalGameBtn">
-                            <i class="fas fa-gamepad"></i> Designer de Jogos Educativos
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateLearningAssessmentBtn">
-                            <i class="fas fa-clipboard-list"></i> Avaliador de Aprendizado
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateSpecialEducationBtn">
-                            <i class="fas fa-wheelchair"></i> Consultor de Educação Especial
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateElearningCourseBtn">
-                            <i class="fas fa-laptop"></i> Designer de Cursos EAD
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateInteractiveLessonBtn">
-                            <i class="fas fa-chalkboard-teacher"></i> Criador de Aulas Interativas
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateSTEMActivityBtn">
-                            <i class="fas fa-atom"></i> Atividades STEM
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateLiteracyActivityBtn">
-                            <i class="fas fa-book-open"></i> Atividades de Alfabetização
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateNumeracyActivityBtn">
-                            <i class="fas fa-calculator"></i> Atividades de Numeramento
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateCriticalReadingBtn">
-                            <i class="fas fa-book-reader"></i> Leitura Crítica
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateWritingPromptBtn">
-                            <i class="fas fa-pen-fancy"></i> Gerador de Tópicos de Escrita
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateScienceProjectBtn">
-                            <i class="fas fa-flask"></i> Projetos Científicos
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateMathChallengeBtn">
-                            <i class="fas fa-square-root-alt"></i> Desafios Matemáticos
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateHistoryProjectBtn">
-                            <i class="fas fa-landmark"></i> Projetos de História
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateGeographyActivityBtn">
-                            <i class="fas fa-globe-americas"></i> Atividades de Geografia
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateArtEducationBtn">
-                            <i class="fas fa-paint-brush"></i> Educação Artística
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateMusicEducationBtn">
-                            <i class="fas fa-music"></i> Educação Musical
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generatePhysicalEducationBtn">
-                            <i class="fas fa-running"></i> Educação Física
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateLanguageArtsBtn">
-                            <i class="fas fa-language"></i> Artes da Linguagem
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateSocialStudiesBtn">
-                            <i class="fas fa-users"></i> Estudos Sociais
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateEnvironmentalEducationBtn">
-                            <i class="fas fa-leaf"></i> Educação Ambiental
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateFinancialLiteracyBtn">
-                            <i class="fas fa-money-bill-wave"></i> Educação Financeira
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateDigitalLiteracyBtn">
-                            <i class="fas fa-laptop-code"></i> Alfabetização Digital
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateMediaLiteracyBtn">
-                            <i class="fas fa-newspaper"></i> Alfabetização Midiática
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateCivicEducationBtn">
-                            <i class="fas fa-landmark"></i> Educação Cívica
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateHealthEducationBtn">
-                            <i class="fas fa-heartbeat"></i> Educação em Saúde
-                        </button>
-                        <button class="tools-panel-btn educacao-tool" id="generateCareerGuidanceBtn">
-                            <i class="fas fa-briefcase"></i> Orientação Vocacional
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Categoria: Negócios (50 ferramentas) -->
-                <div class="category-container">
-                    <button class="category-btn negocios-btn" onclick="toggleCategory('negocios')">
-                        <span><i class="fas fa-chart-line"></i> Negócios (50)</span>
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                    <div class="category-tools negocios-tools" id="negocios-tools">
-                        <button class="tools-panel-btn negocios-tool" id="generateBusinessBtn">
-                            <i class="fas fa-briefcase"></i> Consultor de Negócios
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateMarketingBtn">
-                            <i class="fas fa-bullhorn"></i> Estrategista de Marketing
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateSalesBtn">
-                            <i class="fas fa-handshake"></i> Consultor de Vendas
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateProposalBtn">
-                            <i class="fas fa-file-signature"></i> Redator de Propostas
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateContractBtn">
-                            <i class="fas fa-file-alt"></i> Desenvolvedor de Contratos
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateReportBtn">
-                            <i class="fas fa-chart-pie"></i> Criador de Relatórios
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateSWOTBtn">
-                            <i class="fas fa-chess-board"></i> Analista SWOT
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateBusinessPlanBtn">
-                            <i class="fas fa-project-diagram"></i> Criador de Planos
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generatePitchBtn">
-                            <i class="fas fa-comment-dollar"></i> Desenvolvedor de Pitches
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateInterviewBtn">
-                            <i class="fas fa-comments"></i> Preparador de Entrevistas
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateCustomerServiceBtn">
-                            <i class="fas fa-headset"></i> Consultor de Atendimento
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateNegotiationBtn">
-                            <i class="fas fa-handshake"></i> Estrategista de Negociações
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateLeadershipBtn">
-                            <i class="fas fa-user-tie"></i> Mentor de Liderança
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateTeamBuildingBtn">
-                            <i class="fas fa-people-arrows"></i> Facilitador de Team Building
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateStartupBtn">
-                            <i class="fas fa-rocket"></i> Consultor para Startups
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateEcommerceBtn">
-                            <i class="fas fa-shopping-cart"></i> Estrategista de E-commerce
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateSocialMediaMarketingBtn">
-                            <i class="fas fa-share-alt"></i> Planejador de Marketing
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateSEOStrategyBtn">
-                            <i class="fas fa-search-location"></i> Especialista em SEO
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateBrandStrategyBtn">
-                            <i class="fas fa-trademark"></i> Designer de Estratégias
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateFinancialProjectionBtn">
-                            <i class="fas fa-coins"></i> Criador de Projeções
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateMarketResearchBtn">
-                            <i class="fas fa-poll"></i> Pesquisador de Mercado
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateCompetitiveAnalysisBtn">
-                            <i class="fas fa-chess-knight"></i> Analista Competitivo
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateRiskAssessmentBtn">
-                            <i class="fas fa-exclamation-triangle"></i> Avaliador de Riscos
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateExitStrategyBtn">
-                            <i class="fas fa-door-open"></i> Planejador de Estratégias
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateFranchiseModelBtn">
-                            <i class="fas fa-store"></i> Desenvolvedor de Franquias
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateInvestorDeckBtn">
-                            <i class="fas fa-file-powerpoint"></i> Criador de Decks
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateGrantProposalBtn">
-                            <i class="fas fa-file-signature"></i> Redator de Propostas
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generatePartnershipAgreementBtn">
-                            <i class="fas fa-handshake"></i> Desenvolvedor de Acordos
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateNonDisclosureBtn">
-                            <i class="fas fa-file-contract"></i> Redator de NDAs
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateEmployeeHandbookBtn">
-                            <i class="fas fa-book-reader"></i> Criador de Manuais
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateTrainingProgramBtn">
-                            <i class="fas fa-graduation-cap"></i> Desenvolvedor de Treinamentos
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateHRPolicyBtn">
-                            <i class="fas fa-users-cog"></i> Criador de Políticas de RH
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generatePerformanceMetricsBtn">
-                            <i class="fas fa-chart-line"></i> Criador de Métricas
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateCustomerSurveyBtn">
-                            <i class="fas fa-poll-h"></i> Criador de Pesquisas
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateProductRoadmapBtn">
-                            <i class="fas fa-map-marked-alt"></i> Planejador de Produtos
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateBusinessModelBtn">
-                            <i class="fas fa-project-diagram"></i> Designer de Modelos
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateValuePropositionBtn">
-                            <i class="fas fa-lightbulb"></i> Criador de Propostas
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateGoToMarketBtn">
-                            <i class="fas fa-rocket"></i> Estratégia de Mercado
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generatePricingStrategyBtn">
-                            <i class="fas fa-tags"></i> Estrategista de Preços
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateSupplyChainBtn">
-                            <i class="fas fa-truck"></i> Consultor de Cadeia
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateLogisticsPlanBtn">
-                            <i class="fas fa-shipping-fast"></i> Planejador Logístico
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateInventoryManagementBtn">
-                            <i class="fas fa-boxes"></i> Gestor de Estoque
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateQualityControlBtn">
-                            <i class="fas fa-clipboard-check"></i> Controle de Qualidade
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateProcessImprovementBtn">
-                            <i class="fas fa-cogs"></i> Melhoria de Processos
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateLeanMethodologyBtn">
-                            <i class="fas fa-project-diagram"></i> Consultor Lean
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateSixSigmaBtn">
-                            <i class="fas fa-chart-line"></i> Especialista Six Sigma
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateAgileCoachBtn">
-                            <i class="fas fa-tasks"></i> Coach Ágil
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateScrumMasterBtn">
-                            <i class="fas fa-users"></i> Scrum Master
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateKanbanBoardBtn">
-                            <i class="fas fa-columns"></i> Designer de Kanban
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateBusinessContinuityBtn">
-                            <i class="fas fa-shield-alt"></i> Continuidade de Negócios
-                        </button>
-                        <button class="tools-panel-btn negocios-tool" id="generateDisasterRecoveryBtn">
-                            <i class="fas fa-ambulance"></i> Recuperação de Desastres
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Categoria: Tecnologia (50 ferramentas) -->
-                <div class="category-container">
-                    <button class="category-btn tecnologia-btn" onclick="toggleCategory('tecnologia')">
-                        <span><i class="fas fa-laptop-code"></i> Tecnologia (50)</span>
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                    <div class="category-tools tecnologia-tools" id="tecnologia-tools">
-                        <button class="tools-panel-btn tecnologia-tool" id="generateAPIBtn">
-                            <i class="fas fa-server"></i> Designer de APIs
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateAlgorithmBtn">
-                            <i class="fas fa-project-diagram"></i> Criador de Algoritmos
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateDatabaseBtn">
-                            <i class="fas fa-database"></i> Arquiteto de Bancos
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateUIBtn">
-                            <i class="fas fa-desktop"></i> Designer de UI/UX
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateMobileAppBtn">
-                            <i class="fas fa-mobile-alt"></i> Desenvolvedor de Apps
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateWebsiteBtn">
-                            <i class="fas fa-globe-americas"></i> Desenvolvedor Web
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateGameBtn">
-                            <i class="fas fa-gamepad"></i> Designer de Jogos
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateAIBtn">
-                            <i class="fas fa-robot"></i> Especialista em IA
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateBlockchainBtn">
-                            <i class="fas fa-link"></i> Consultor de Blockchain
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateSecurityBtn">
-                            <i class="fas fa-shield-alt"></i> Especialista em Segurança
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateDevOpsBtn">
-                            <i class="fas fa-code-branch"></i> Engenheiro DevOps
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateCloudComputingBtn">
-                            <i class="fas fa-cloud"></i> Especialista em Cloud
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateDataScienceBtn">
-                            <i class="fas fa-chart-bar"></i> Cientista de Dados
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateMachineLearningBtn">
-                            <i class="fas fa-brain"></i> Especialista em ML
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateDeepLearningBtn">
-                            <i class="fas fa-network-wired"></i> Engenheiro de DL
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateNeuralNetworkBtn">
-                            <i class="fas fa-project-diagram"></i> Designer de Redes
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateComputerVisionBtn">
-                            <i class="fas fa-eye"></i> Especialista em Visão
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateNaturalLanguageBtn">
-                            <i class="fas fa-language"></i> Engenheiro de NLP
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateRoboticsBtn">
-                            <i class="fas fa-robot"></i> Especialista em Robótica
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateIoTBtn">
-                            <i class="fas fa-wifi"></i> Consultor de IoT
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateARVRBtn">
-                            <i class="fas fa-vr-cardboard"></i> Desenvolvedor de AR/VR
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateQuantumComputingBtn">
-                            <i class="fas fa-atom"></i> Pesquisador de Quantum
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateCybersecurityBtn">
-                            <i class="fas fa-user-shield"></i> Especialista em Cibersegurança
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateEthicalHackingBtn">
-                            <i class="fas fa-user-secret"></i> Consultor de Hacking
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateDigitalForensicsBtn">
-                            <i class="fas fa-search"></i> Especialista em Forense
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateSoftwareArchitectureBtn">
-                            <i class="fas fa-sitemap"></i> Arquiteto de Software
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateMicroservicesBtn">
-                            <i class="fas fa-cubes"></i> Especialista em Microserviços
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateContainerizationBtn">
-                            <i class="fas fa-box"></i> Especialista em Containers
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateKubernetesBtn">
-                            <i class="fas fa-dharmachakra"></i> Especialista em Kubernetes
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateServerlessBtn">
-                            <i class="fas fa-bolt"></i> Especialista Serverless
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateBigDataBtn">
-                            <i class="fas fa-database"></i> Especialista em Big Data
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateDataWarehouseBtn">
-                            <i class="fas fa-warehouse"></i> Designer de Data Warehouse
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateETLBtn">
-                            <i class="fas fa-exchange-alt"></i> Especialista em ETL
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateDataVisualizationBtn">
-                            <i class="fas fa-chart-area"></i> Visualização de Dados
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateBusinessIntelligenceBtn">
-                            <i class="fas fa-chart-line"></i> Business Intelligence
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateDataGovernanceBtn">
-                            <i class="fas fa-shield-alt"></i> Governança de Dados
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateDataPrivacyBtn">
-                            <i class="fas fa-user-lock"></i> Privacidade de Dados
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateComplianceBtn">
-                            <i class="fas fa-file-contract"></i> Especialista em Conformidade
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateITInfrastructureBtn">
-                            <i class="fas fa-network-wired"></i> Infraestrutura de TI
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateNetworkSecurityBtn">
-                            <i class="fas fa-shield-virus"></i> Segurança de Rede
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generatePenetrationTestingBtn">
-                            <i class="fas fa-bug"></i> Teste de Penetração
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateVulnerabilityAssessmentBtn">
-                            <i class="fas fa-search-minus"></i> Avaliação de Vulnerabilidades
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateIncidentResponseBtn">
-                            <i class="fas fa-ambulance"></i> Resposta a Incidentes
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateThreatIntelligenceBtn">
-                            <i class="fas fa-brain"></i> Inteligência de Ameaças
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateMalwareAnalysisBtn">
-                            <i class="fas fa-virus"></i> Análise de Malware
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateReverseEngineeringBtn">
-                            <i class="fas fa-code"></i> Engenharia Reversa
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateCryptographyBtn">
-                            <i class="fas fa-key"></i> Criptografia
-                        </button>
-                        <button class="tools-panel-btn tecnologia-tool" id="generateZeroTrustBtn">
-                            <i class="fas fa-user-shield"></i> Zero Trust
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Categoria: Entretenimento (50 ferramentas) -->
-                <div class="category-container">
-                    <button class="category-btn entretenimento-btn" onclick="toggleCategory('entretenimento')">
-                        <span><i class="fas fa-film"></i> Entretenimento (50)</span>
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                    <div class="category-tools entretenimento-tools" id="entretenimento-tools">
-                        <button class="tools-panel-btn entretenimento-tool" id="generateMovieBtn">
-                            <i class="fas fa-film"></i> Crítico de Cinema
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateTVShowBtn">
-                            <i class="fas fa-tv"></i> Analista de Séries
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateBookBtn">
-                            <i class="fas fa-book"></i> Resenhista de Livros
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateGameIdeaBtn">
-                            <i class="fas fa-dice"></i> Designer de Jogos
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateTriviaBtn">
-                            <i class="fas fa-question"></i> Criador de Trivias
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateDebateBtn">
-                            <i class="fas fa-gavel"></i> Moderador de Debates
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generatePodcastBtn">
-                            <i class="fas fa-podcast"></i> Produtor de Podcasts
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateComedyBtn">
-                            <i class="fas fa-theater-masks"></i> Roteirista de Comédia
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateHorrorBtn">
-                            <i class="fas fa-ghost"></i> Escritor de Terror
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateFantasyBtn">
-                            <i class="fas fa-dragon"></i> Autor de Fantasia
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateSciFiBtn">
-                            <i class="fas fa-rocket"></i> Escritor de Ficção
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateRomanceBtn">
-                            <i class="fas fa-heart"></i> Autor de Romance
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateMysteryBtn">
-                            <i class="fas fa-search"></i> Escritor de Mistério
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateAdventureBtn">
-                            <i class="fas fa-map-marked-alt"></i> Autor de Aventura
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateFanFictionBtn">
-                            <i class="fas fa-book-dead"></i> Escritor de Fanfiction
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateBoardGameBtn">
-                            <i class="fas fa-chess-board"></i> Designer de Board Games
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateCardGameBtn">
-                            <i class="fas fa-club"></i> Criador de Card Games
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateRolePlayingBtn">
-                            <i class="fas fa-dice-d20"></i> Mestre de RPG
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateVideoGameBtn">
-                            <i class="fas fa-gamepad"></i> Designer de Video Games
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateMobileGameBtn">
-                            <i class="fas fa-mobile-alt"></i> Desenvolvedor de Mobile Games
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generatePuzzleGameBtn">
-                            <i class="fas fa-puzzle-piece"></i> Criador de Puzzle Games
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateStrategyGameBtn">
-                            <i class="fas fa-chess"></i> Designer de Strategy Games
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateSimulationGameBtn">
-                            <i class="fas fa-sim-card"></i> Desenvolvedor de Simulation Games
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateSportsGameBtn">
-                            <i class="fas fa-running"></i> Criador de Sports Games
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateMusicPlaylistBtn">
-                            <i class="fas fa-music"></i> Criador de Playlists
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateMovieRecommendationBtn">
-                            <i class="fas fa-film"></i> Recomendador de Filmes
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateTVShowRecommendationBtn">
-                            <i class="fas fa-tv"></i> Recomendador de Séries
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateBookRecommendationBtn">
-                            <i class="fas fa-book"></i> Recomendador de Livros
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateGameRecommendationBtn">
-                            <i class="fas fa-gamepad"></i> Recomendador de Jogos
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateMovieScriptBtn">
-                            <i class="fas fa-scroll"></i> Roteirista de Cinema
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateTVScriptBtn">
-                            <i class="fas fa-tv"></i> Roteirista de TV
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateTheaterScriptBtn">
-                            <i class="fas fa-theater-masks"></i> Roteirista de Teatro
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateStandupComedyBtn">
-                            <i class="fas fa-microphone-alt"></i> Escritor de Stand-up
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateSketchComedyBtn">
-                            <i class="fas fa-laugh-squint"></i> Escritor de Esquetes
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateSatireContentBtn">
-                            <i class="fas fa-grin-squint-tears"></i> Criador de Sátira
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateParodyContentBtn">
-                            <i class="fas fa-grin-tongue-squint"></i> Criador de Paródia
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateMemesBtn">
-                            <i class="fas fa-laugh-squint"></i> Criador de Memes
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateViralContentBtn">
-                            <i class="fas fa-share-alt"></i> Criador de Conteúdo Viral
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateSocialMediaContentBtn">
-                            <i class="fas fa-hashtag"></i> Criador de Conteúdo
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateYouTubeScriptBtn">
-                            <i class="fab fa-youtube"></i> Roteirista de YouTube
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generatePodcastScriptBtn">
-                            <i class="fas fa-podcast"></i> Roteirista de Podcast
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateStreamingContentBtn">
-                            <i class="fas fa-video"></i> Criador de Conteúdo
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateRealityShowBtn">
-                            <i class="fas fa-users"></i> Designer de Reality Shows
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateGameShowBtn">
-                            <i class="fas fa-trophy"></i> Designer de Game Shows
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateTalentShowBtn">
-                            <i class="fas fa-star"></i> Designer de Talent Shows
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateTalkShowBtn">
-                            <i class="fas fa-microphone-alt"></i> Designer de Talk Shows
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateDocumentaryBtn">
-                            <i class="fas fa-camera"></i> Roteirista de Documentários
-                        </button>
-                        <button class="tools-panel-btn entretenimento-tool" id="generateDocuseriesBtn">
-                            <i class="fas fa-film"></i> Roteirista de Docuseries
-                        </button>
-                    </div>
-                </div>
-                
                 <!-- Categoria: Xadrez -->
                 <div class="category-container">
                     <button class="category-btn xadrez-btn" onclick="toggleCategory('xadrez')">
@@ -2018,15 +939,6 @@ Vou corrigir o código para que todas as funcionalidades funcionem corretamente.
                         </button>
                         <button class="tools-panel-btn xadrez-tool" id="chessOpeningsBtn">
                             <i class="fas fa-door-open"></i> Aberturas de Xadrez
-                        </button>
-                        <button class="tools-panel-btn xadrez-tool" id="chessEndgamesBtn">
-                            <i class="fas fa-flag"></i> Finais de Xadrez
-                        </button>
-                        <button class="tools-panel-btn xadrez-tool" id="chessPuzzlesBtn">
-                            <i class="fas fa-puzzle-piece"></i> Problemas de Xadrez
-                        </button>
-                        <button class="tools-panel-btn xadrez-tool" id="chessAnalysisBtn">
-                            <i class="fas fa-search"></i> Analisar Partida
                         </button>
                     </div>
                 </div>
@@ -2056,22 +968,6 @@ Vou corrigir o código para que todas as funcionalidades funcionem corretamente.
                             <div class="feature-icon"><i class="fas fa-edit"></i></div>
                             <div class="feature-title">Otimização de Texto</div>
                         </div>
-                        <div class="feature-card">
-                            <div class="feature-icon"><i class="fas fa-code"></i></div>
-                            <div class="feature-title">Gerador de Código</div>
-                        </div>
-                        <div class="feature-card">
-                            <div class="feature-icon"><i class="fas fa-lightbulb"></i></div>
-                            <div class="feature-title">Gerador de Ideias</div>
-                        </div>
-                        <div class="feature-card">
-                            <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
-                            <div class="feature-title">Análise de Dados</div>
-                        </div>
-                        <div class="feature-card">
-                            <div class="feature-icon"><i class="fas fa-pencil-alt"></i></div>
-                            <div class="feature-title">Criação de Conteúdo</div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -2100,7 +996,7 @@ Vou corrigir o código para que todas as funcionalidades funcionem corretamente.
     </div>
 
     <script>
-        // Função para alternar a exibição das categorias
+        // Função global para alternar categorias
         function toggleCategory(categoryId) {
             const btn = document.querySelector(`.${categoryId}-btn`);
             const tools = document.getElementById(`${categoryId}-tools`);
@@ -2109,911 +1005,542 @@ Vou corrigir o código para que todas as funcionalidades funcionem corretamente.
             tools.classList.toggle('active');
         }
 
-        document.addEventListener('DOMContentLoaded', () => {
-            const ViBot = {
-                config: {
-                    apiUrl: "https://api.groq.com/openai/v1/chat/completions",
-                    apiKey: "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", // API key alternativa
-                    model: "llama3-70b-8192",
-                    temperature: 0.7,
-                    maxTokens: 16384,
-                    systemPrompt: "Você é um assistente útil chamado ViBot. Responda de forma clara e concisa no idioma do usuário."
-                },
+        // Objeto principal do ViBot
+        const ViBot = {
+            config: {
+                apiUrl: "https://api.groq.com/openai/v1/chat/completions",
+                apiKey: "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",
+                model: "llama3-70b-8192",
+                temperature: 0.7,
+                maxTokens: 8192,
+                systemPrompt: "Você é um assistente útil chamado ViBot. Responda de forma clara e concisa no idioma do usuário."
+            },
 
-                modelNames: {
-                    "llama3-70b-8192": "ViBot Pro",
-                    "llama3-8b-8192": "ViBot Standard",
-                    "llama-3.1-8b-instant": "ViBot Instant",
-                    "llama-3.3-70b-versatile": "ViBot Versátil",
-                    "gemma2-9b-it": "ViBot Gemma",
-                    "meta-llama/llama-guard-4-12b": "ViBot Guard"
-                },
+            // Variáveis de estado
+            elements: {},
+            conversations: {},
+            currentConversationId: null,
+            tools: [],
 
-                init() {
-                    this.cacheElements();
-                    this.setupEventListeners();
-                    this.setupInitialState();
-                    this.updateUI();
-                },
+            // Inicialização
+            init() {
+                this.cacheElements();
+                this.setupEventListeners();
+                this.loadConfig();
+                this.loadConversations();
+                this.updateUI();
+                
+                // Inicia uma conversa se não existir
+                if (!this.currentConversationId || !this.conversations[this.currentConversationId]) {
+                    this.startNewConversation();
+                }
+            },
 
-                cacheElements() {
-                    this.elements = {
-                        chatbox: document.getElementById("chatbox"),
-                        userInput: document.getElementById("userInput"),
-                        sendBtn: document.getElementById("sendBtn"),
-                        newConversationBtn: document.getElementById("newConversationBtn"),
-                        conversationList: document.getElementById("conversationList"),
-                        toggleThemeBtn: document.getElementById("toggleTheme"),
-                        menuBtn: document.getElementById("menuBtn"),
-                        toolsBtn: document.getElementById("toolsBtn"),
-                        sidebar: document.getElementById("sidebar"),
-                        toolsSidebar: document.getElementById("tools-sidebar"),
-                        modelSelector: document.getElementById("modelSelector"),
-                        temperatureSlider: document.getElementById("temperatureSlider"),
-                        temperatureValue: document.getElementById("temperatureValue"),
-                        maxTokensSlider: document.getElementById("maxTokensSlider"),
-                        maxTokensValue: document.getElementById("maxTokensValue"),
-                        settingsPanel: document.getElementById("settingsPanel"),
-                        chatTabBtn: document.getElementById("chatTabBtn"),
-                        toolsTabBtn: document.getElementById("toolsTabBtn"),
-                        settingsTabBtn: document.getElementById("settingsTabBtn"),
-                        deleteAllConversationsBtn: document.getElementById("deleteAllConversationsBtn")
-                    };
+            // Cache de elementos DOM
+            cacheElements() {
+                // Elementos principais
+                this.elements = {
+                    chatbox: document.getElementById("chatbox"),
+                    userInput: document.getElementById("userInput"),
+                    sendBtn: document.getElementById("sendBtn"),
+                    newConversationBtn: document.getElementById("newConversationBtn"),
+                    conversationList: document.getElementById("conversationList"),
+                    toggleThemeBtn: document.getElementById("toggleTheme"),
+                    menuBtn: document.getElementById("menuBtn"),
+                    toolsBtn: document.getElementById("toolsBtn"),
+                    sidebar: document.getElementById("sidebar"),
+                    toolsSidebar: document.getElementById("tools-sidebar"),
+                    modelSelector: document.getElementById("modelSelector"),
+                    temperatureSlider: document.getElementById("temperatureSlider"),
+                    temperatureValue: document.getElementById("temperatureValue"),
+                    maxTokensSlider: document.getElementById("maxTokensSlider"),
+                    maxTokensValue: document.getElementById("maxTokensValue"),
+                    deleteAllConversationsBtn: document.getElementById("deleteAllConversationsBtn"),
+                    chatTabBtn: document.getElementById("chatTabBtn"),
+                    toolsTabBtn: document.getElementById("toolsTabBtn"),
+                    settingsTabBtn: document.getElementById("settingsTabBtn")
+                };
 
-                    // Lista de todas as ferramentas (300+ no total)
-                    this.tools = [
-                        // Produtividade (50)
-                        'generateEmailBtn', 'summarizeTextBtn', 'translateTextBtn', 
-                        'improveTextBtn', 'generateCodeBtn', 'generateIdeasBtn', 
-                        'analyzeDataBtn', 'createContentBtn', 'explainConceptBtn', 
-                        'solveProblemBtn', 'generateScheduleBtn', 'generateMeetingBtn',
-                        'generatePresentationBtn', 'generateChecklistBtn', 'generateWorkflowBtn',
-                        'generateBudgetBtn', 'generateInvoiceBtn', 'generateResumeBtn',
-                        'generateCoverLetterBtn', 'generateJobDescriptionBtn', 'generatePerformanceReviewBtn',
-                        'generateKPIReportBtn',                         'generateBusinessStrategyBtn', 'generateBusinessPlanBtn', 'generatePitchBtn',
-                        'generateInterviewBtn', 'generateCustomerServiceBtn', 'generateNegotiationBtn',
-                        'generateLeadershipBtn', 'generateTeamBuildingBtn', 'generateStartupBtn',
-                        'generateEcommerceBtn', 'generateSocialMediaMarketingBtn', 'generateSEOStrategyBtn',
-                        'generateBrandStrategyBtn', 'generateFinancialProjectionBtn', 'generateSWOTBtn',
-                        'generateMarketResearchBtn', 'generateSalesFunnelBtn', 'generateCustomerPersonaBtn',
-                        'generateCompetitiveAnalysisBtn', 'generateRiskAssessmentBtn', 'generateExitStrategyBtn',
-                        'generateFranchiseModelBtn', 'generateInvestorDeckBtn', 'generateGrantProposalBtn',
-                        'generatePartnershipAgreementBtn', 'generateNonDisclosureBtn', 'generateEmployeeHandbookBtn',
-                        'generateTrainingProgramBtn',
-                        
-                        // Criatividade (50)
-                        'generatePoemBtn', 'generateStoryBtn', 'generateJokeBtn',
-                        'generateScriptBtn', 'generateSongBtn', 'generateSpeechBtn',
-                        'generateArtBtn', 'generateDesignBtn', 'generateBrandingBtn',
-                        'generateSloganBtn', 'generateCharacterBtn', 'generateWorldBuildingBtn',
-                        'generatePlotTwistBtn', 'generateDialogueBtn', 'generateHaikuBtn',
-                        'generateLimerickBtn', 'generateAcrosticBtn', 'generateMetaphorBtn',
-                        'generateRiddleBtn', 'generatePuzzleBtn', 'generateComicScriptBtn',
-                        'generateScreenplayBtn', 'generateTheaterPlayBtn', 'generateRadioDramaBtn',
-                        'generateChildrenStoryBtn', 'generateFairyTaleBtn', 'generateMythologyBtn',
-                        'generateUrbanLegendBtn', 'generateAllegoryBtn', 'generateParableBtn',
-                        'generateFableBtn', 'generateSatireBtn', 'generateParodyBtn',
-                        'generateSonnetBtn', 'generateOdeBtn', 'generateElegyBtn',
-                        'generateBalladBtn', 'generateEpicBtn', 'generateFreeVerseBtn',
-                        'generateConcretePoetryBtn', 'generateBlackoutPoetryBtn', 'generateFlashFictionBtn',
-                        'generateSixWordStoryBtn', 'generateTwitteratureBtn', 'generateInteractiveFictionBtn',
-                        'generateChooseYourAdventureBtn', 'generateDrabbleBtn', 'generateVignetteBtn',
-                        'generateStreamOfConsciousnessBtn', 'generateEpistolaryBtn',
-                        
-                        // Xadrez
-                        'playChessBtn', 'chessTipsBtn', 'chessOpeningsBtn',
-                        'chessEndgamesBtn', 'chessPuzzlesBtn', 'chessAnalysisBtn'
-                    ];
+                // Todas as ferramentas (botões)
+                this.tools = [
+                    'generateEmailBtn', 'summarizeTextBtn', 'translateTextBtn', 
+                    'improveTextBtn', 'generateCodeBtn', 'generateIdeasBtn',
+                    'playChessBtn', 'chessTipsBtn', 'chessOpeningsBtn',
+                    'chessEndgamesBtn', 'chessPuzzlesBtn', 'chessAnalysisBtn'
+                ];
+            },
 
-                    // Configuração do tabuleiro de xadrez
-                    this.chess = {
-                        board: null,
-                        game: new Chess(),
-                        statusEl: null,
-                        fenEl: null,
-                        pgnEl: null,
-                        selectedSquare: null,
-                        selectedPiece: null,
-                        possibleMoves: []
-                    };
-                },
-
-                setupEventListeners() {
-                    // Eventos principais
-                    this.elements.sendBtn.addEventListener('click', () => this.handleSendMessage());
-                    this.elements.userInput.addEventListener('keydown', (e) => {
-                        if (e.key === 'Enter' && !e.shiftKey) {
-                            e.preventDefault();
-                            this.handleSendMessage();
-                        }
-                    });
-
-                    // Eventos de UI
-                    this.elements.toggleThemeBtn.addEventListener('click', () => this.toggleTheme());
-                    this.elements.menuBtn.addEventListener('click', () => this.toggleSidebar());
-                    this.elements.toolsBtn.addEventListener('click', () => this.toggleToolsSidebar());
-                    this.elements.newConversationBtn.addEventListener('click', () => this.startNewConversation());
-                    this.elements.deleteAllConversationsBtn.addEventListener('click', () => this.deleteAllConversations());
-
-                    // Eventos de abas móveis
-                    this.elements.chatTabBtn.addEventListener('click', () => this.showChatTab());
-                    this.elements.toolsTabBtn.addEventListener('click', () => this.showToolsTab());
-                    this.elements.settingsTabBtn.addEventListener('click', () => this.showSettingsTab());
-
-                    // Eventos de configurações
-                    this.elements.modelSelector.addEventListener('change', (e) => {
-                        this.config.model = e.target.value;
-                        this.saveConfig();
-                        this.updateUI();
-                    });
-
-                    this.elements.temperatureSlider.addEventListener('input', (e) => {
-                        this.config.temperature = parseFloat(e.target.value);
-                        this.elements.temperatureValue.textContent = this.config.temperature.toFixed(1);
-                        this.saveConfig();
-                    });
-
-                    this.elements.maxTokensSlider.addEventListener('input', (e) => {
-                        this.config.maxTokens = parseInt(e.target.value);
-                        this.elements.maxTokensValue.textContent = this.config.maxTokens;
-                        this.saveConfig();
-                    });
-
-                    // Eventos para ferramentas
-                    this.tools.forEach(toolId => {
-                        const tool = document.getElementById(toolId);
-                        if (tool) {
-                            tool.addEventListener('click', () => this.handleToolClick(toolId));
-                        }
-                    });
-
-                    // Auto-ajuste da altura do textarea
-                    this.elements.userInput.addEventListener('input', this.autoResizeTextarea.bind(this));
-                },
-
-                setupInitialState() {
-                    // Carregar configurações salvas
-                    this.loadConfig();
-                    
-                    // Carregar conversas salvas
-                    this.loadConversations();
-                    
-                    // Iniciar uma nova conversa se não houver nenhuma
-                    if (!this.currentConversationId) {
-                        this.startNewConversation();
+            // Configuração de eventos
+            setupEventListeners() {
+                // Eventos principais
+                this.elements.sendBtn.addEventListener('click', () => this.handleSendMessage());
+                this.elements.userInput.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' && !e.shiftKey) {
+                        e.preventDefault();
+                        this.handleSendMessage();
                     }
-                    
-                    // Atualizar UI com as configurações carregadas
-                    this.updateUI();
-                },
+                });
 
-                autoResizeTextarea() {
-                    const textarea = this.elements.userInput;
-                    textarea.style.height = 'auto';
-                    textarea.style.height = (textarea.scrollHeight) + 'px';
-                },
+                // Eventos de UI
+                this.elements.toggleThemeBtn.addEventListener('click', () => this.toggleTheme());
+                this.elements.menuBtn.addEventListener('click', () => this.toggleSidebar());
+                this.elements.toolsBtn.addEventListener('click', () => this.toggleToolsSidebar());
+                this.elements.newConversationBtn.addEventListener('click', () => this.startNewConversation());
+                this.elements.deleteAllConversationsBtn.addEventListener('click', () => this.deleteAllConversations());
+                
+                // Eventos de abas
+                this.elements.chatTabBtn.addEventListener('click', () => this.showChatTab());
+                this.elements.toolsTabBtn.addEventListener('click', () => this.showToolsTab());
+                this.elements.settingsTabBtn.addEventListener('click', () => this.showSettingsTab());
 
-                toggleTheme() {
-                    const isDark = document.body.getAttribute('data-theme') === 'dark';
-                    document.body.setAttribute('data-theme', isDark ? '' : 'dark');
-                    localStorage.setItem('theme', isDark ? 'light' : 'dark');
-                    this.elements.toggleThemeBtn.innerHTML = isDark ? '<i class="fas fa-moon"></i>' : '<i class="fas fa-sun"></i>';
-                },
+                // Eventos de configurações
+                this.elements.modelSelector.addEventListener('change', (e) => {
+                    this.config.model = e.target.value;
+                    this.saveConfig();
+                });
 
-                toggleSidebar() {
-                    this.elements.sidebar.classList.toggle('active');
-                    if (this.elements.sidebar.classList.contains('active')) {
-                        this.elements.toolsSidebar.classList.remove('active');
-                    }
-                },
-
-                toggleToolsSidebar() {
-                    this.elements.toolsSidebar.classList.toggle('active');
-                    if (this.elements.toolsSidebar.classList.contains('active')) {
-                        this.elements.sidebar.classList.remove('active');
-                    }
-                },
-
-                showChatTab() {
-                    this.elements.sidebar.classList.remove('active');
-                    this.elements.toolsSidebar.classList.remove('active');
-                },
-
-                showToolsTab() {
-                    this.elements.toolsSidebar.classList.add('active');
-                    this.elements.sidebar.classList.remove('active');
-                },
-
-                showSettingsTab() {
-                    this.elements.sidebar.classList.add('active');
-                    this.elements.toolsSidebar.classList.remove('active');
-                },
-
-                loadConfig() {
-                    const savedConfig = localStorage.getItem('ViBotConfig');
-                    if (savedConfig) {
-                        Object.assign(this.config, JSON.parse(savedConfig));
-                    }
-                    
-                    // Aplicar configurações carregadas aos controles
-                    this.elements.modelSelector.value = this.config.model;
-                    this.elements.temperatureSlider.value = this.config.temperature;
+                this.elements.temperatureSlider.addEventListener('input', (e) => {
+                    this.config.temperature = parseFloat(e.target.value);
                     this.elements.temperatureValue.textContent = this.config.temperature.toFixed(1);
-                    this.elements.maxTokensSlider.value = this.config.maxTokens;
+                    this.saveConfig();
+                });
+
+                this.elements.maxTokensSlider.addEventListener('input', (e) => {
+                    this.config.maxTokens = parseInt(e.target.value);
                     this.elements.maxTokensValue.textContent = this.config.maxTokens;
-                    
-                    // Carregar tema
-                    const savedTheme = localStorage.getItem('theme') || 'light';
-                    document.body.setAttribute('data-theme', savedTheme === 'dark' ? 'dark' : '');
-                    this.elements.toggleThemeBtn.innerHTML = savedTheme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
-                },
+                    this.saveConfig();
+                });
 
-                saveConfig() {
-                    localStorage.setItem('ViBotConfig', JSON.stringify({
-                        model: this.config.model,
-                        temperature: this.config.temperature,
-                        maxTokens: this.config.maxTokens,
-                        systemPrompt: this.config.systemPrompt
-                    }));
-                },
-
-                loadConversations() {
-                    this.conversations = JSON.parse(localStorage.getItem('ViBotConversations') || {};
-                    this.currentConversationId = localStorage.getItem('ViBotCurrentConversation');
-                    
-                    this.renderConversationList();
-                    
-                    if (this.currentConversationId && this.conversations[this.currentConversationId]) {
-                        this.renderConversation(this.currentConversationId);
+                // Eventos para todas as ferramentas
+                this.tools.forEach(toolId => {
+                    const tool = document.getElementById(toolId);
+                    if (tool) {
+                        tool.addEventListener('click', () => this.handleToolClick(toolId));
                     }
-                },
+                });
 
-                saveConversations() {
-                    localStorage.setItem('ViBotConversations', JSON.stringify(this.conversations));
-                    if (this.currentConversationId) {
-                        localStorage.setItem('ViBotCurrentConversation', this.currentConversationId);
-                    }
-                },
+                // Auto-ajuste do textarea
+                this.elements.userInput.addEventListener('input', () => {
+                    this.elements.userInput.style.height = 'auto';
+                    this.elements.userInput.style.height = (this.elements.userInput.scrollHeight) + 'px';
+                });
+            },
 
-                renderConversationList() {
-                    this.elements.conversationList.innerHTML = '';
-                    
-                    Object.keys(this.conversations).forEach(conversationId => {
-                        const conversation = this.conversations[conversationId];
-                        const isActive = conversationId === this.currentConversationId;
-                        
-                        const conversationEl = document.createElement('button');
-                        conversationEl.className = `conversation-btn ${isActive ? 'active' : ''}`;
-                        conversationEl.innerHTML = `
-                            <i class="fas fa-comment conversation-icon"></i>
-                            ${conversation.title || 'Nova Conversa'}
-                            <button class="conversation-delete" data-id="${conversationId}">
-                                <i class="fas fa-trash"></i>
-                            </button>
-                        `;
-                        
-                        conversationEl.addEventListener('click', () => {
-                            this.currentConversationId = conversationId;
-                            this.renderConversation(conversationId);
-                            this.renderConversationList();
-                            this.toggleSidebar();
-                        });
-                        
-                        const deleteBtn = conversationEl.querySelector('.conversation-delete');
-                        deleteBtn.addEventListener('click', (e) => {
-                            e.stopPropagation();
-                            this.deleteConversation(conversationId);
-                        });
-                        
-                        this.elements.conversationList.appendChild(conversationEl);
-                    });
-                },
+            // Métodos de UI
+            toggleTheme() {
+                const isDark = document.body.getAttribute('data-theme') === 'dark';
+                document.body.setAttribute('data-theme', isDark ? '' : 'dark');
+                localStorage.setItem('theme', isDark ? 'light' : 'dark');
+                this.elements.toggleThemeBtn.innerHTML = isDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+            },
 
-                renderConversation(conversationId) {
-                    if (!this.conversations[conversationId]) return;
+            toggleSidebar() {
+                this.elements.sidebar.classList.toggle('active');
+                if (this.elements.sidebar.classList.contains('active')) {
+                    this.elements.toolsSidebar.classList.remove('active');
+                }
+            },
+
+            toggleToolsSidebar() {
+                this.elements.toolsSidebar.classList.toggle('active');
+                if (this.elements.toolsSidebar.classList.contains('active')) {
+                    this.elements.sidebar.classList.remove('active');
+                }
+            },
+
+            showChatTab() {
+                this.elements.sidebar.classList.remove('active');
+                this.elements.toolsSidebar.classList.remove('active');
+            },
+
+            showToolsTab() {
+                this.elements.toolsSidebar.classList.add('active');
+                this.elements.sidebar.classList.remove('active');
+            },
+
+            showSettingsTab() {
+                this.elements.sidebar.classList.add('active');
+                this.elements.toolsSidebar.classList.remove('active');
+            },
+
+            // Métodos de conversação
+            startNewConversation() {
+                const newId = Date.now().toString();
+                this.currentConversationId = newId;
+                
+                this.conversations[newId] = {
+                    id: newId,
+                    title: 'Nova Conversa',
+                    model: this.config.model,
+                    temperature: this.config.temperature,
+                    maxTokens: this.config.maxTokens,
+                    createdAt: new Date().toISOString(),
+                    messages: []
+                };
+                
+                this.saveConversations();
+                this.renderConversationList();
+                this.renderConversation(newId);
+                this.toggleSidebar();
+            },
+
+            handleSendMessage() {
+                const userInput = this.elements.userInput.value.trim();
+                if (!userInput) return;
+                
+                this.appendMessage('user', userInput);
+                this.elements.userInput.value = '';
+                this.elements.userInput.style.height = 'auto';
+                this.elements.sendBtn.disabled = true;
+                
+                const typingId = 'typing-' + Date.now();
+                this.appendMessage('assistant', '<span class="typing">Digitando...</span>', typingId);
+                
+                this.saveUserMessage(userInput);
+                
+                const messages = [
+                    { role: 'system', content: this.config.systemPrompt },
+                    ...this.conversations[this.currentConversationId].messages.map(msg => ({
+                        role: msg.role,
+                        content: msg.content
+                    }))
+                ];
+                
+                this.callAPI(messages, typingId);
+            },
+
+            // Métodos auxiliares
+            appendMessage(role, content, id = null) {
+                const messageDiv = document.createElement('div');
+                messageDiv.className = `message ${role}`;
+                if (id) messageDiv.id = id;
+                messageDiv.innerHTML = content;
+                
+                if (role === 'assistant') {
+                    const actionsDiv = document.createElement('div');
+                    actionsDiv.className = 'message-actions';
+                    actionsDiv.innerHTML = `
+                        <button class="action-btn copy-btn" title="Copiar">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    `;
                     
-                    const conversation = this.conversations[conversationId];
-                    this.elements.chatbox.innerHTML = '';
-                    
-                    if (conversation.messages.length === 0) {
-                        this.showWelcomeMessage();
-                    } else {
-                        conversation.messages.forEach(message => {
-                            this.appendMessage(message.role, message.content);
-                        });
-                        
-                        // Rolagem para a última mensagem
+                    actionsDiv.querySelector('.copy-btn').addEventListener('click', () => {
+                        navigator.clipboard.writeText(content);
+                        const icon = actionsDiv.querySelector('.copy-btn i');
+                        icon.classList.remove('fa-copy');
+                        icon.classList.add('fa-check');
                         setTimeout(() => {
-                            this.elements.chatbox.scrollTop = this.elements.chatbox.scrollHeight;
-                        }, 100);
-                    }
-                },
-
-                showWelcomeMessage() {
-                    const welcomeMessage = document.querySelector('.welcome-message');
-                    if (welcomeMessage) {
-                        this.elements.chatbox.innerHTML = '';
-                        this.elements.chatbox.appendChild(welcomeMessage.cloneNode(true));
-                    }
-                },
-
-                startNewConversation() {
-                    const newId = Date.now().toString();
-                    this.currentConversationId = newId;
-                    
-                    this.conversations[newId] = {
-                        id: newId,
-                        title: 'Nova Conversa',
-                        model: this.config.model,
-                        temperature: this.config.temperature,
-                        maxTokens: this.config.maxTokens,
-                        createdAt: new Date().toISOString(),
-                        messages: []
-                    };
-                    
-                    this.saveConversations();
-                    this.renderConversationList();
-                    this.renderConversation(newId);
-                    this.toggleSidebar();
-                },
-
-                deleteConversation(conversationId) {
-                    if (confirm('Tem certeza que deseja excluir esta conversa?')) {
-                        delete this.conversations[conversationId];
-                        
-                        if (this.currentConversationId === conversationId) {
-                            const remainingIds = Object.keys(this.conversations);
-                            this.currentConversationId = remainingIds.length > 0 ? remainingIds[0] : null;
-                            
-                            if (this.currentConversationId) {
-                                this.renderConversation(this.currentConversationId);
-                            } else {
-                                this.startNewConversation();
-                            }
-                        }
-                        
-                        this.saveConversations();
-                        this.renderConversationList();
-                    }
-                },
-
-                deleteAllConversations() {
-                    if (confirm('Tem certeza que deseja excluir TODAS as conversas? Esta ação não pode ser desfeita.')) {
-                        this.conversations = {};
-                        this.startNewConversation();
-                    }
-                },
-
-                handleSendMessage() {
-                    const userInput = this.elements.userInput.value.trim();
-                    if (!userInput) return;
-                    
-                    // Adicionar mensagem do usuário ao chat
-                    this.appendMessage('user', userInput);
-                    
-                    // Limpar input
-                    this.elements.userInput.value = '';
-                    this.autoResizeTextarea();
-                    
-                    // Desabilitar botão de enviar enquanto processa
-                    this.elements.sendBtn.disabled = true;
-                    
-                    // Adicionar mensagem de "digitando..."
-                    const typingId = 'typing-' + Date.now();
-                    this.appendMessage('assistant', '<span class="typing">Digitando...</span>', typingId);
-                    
-                    // Salvar mensagem do usuário na conversa
-                    this.saveUserMessage(userInput);
-                    
-                    // Preparar mensagens para a API
-                    const messages = [
-                        { role: 'system', content: this.config.systemPrompt },
-                        ...this.conversations[this.currentConversationId].messages.map(msg => ({
-                            role: msg.role,
-                            content: msg.content
-                        }))
-                    ];
-                    
-                    // Chamar a API
-                    this.callAPI(messages, typingId);
-                },
-
-                saveUserMessage(content) {
-                    if (!this.currentConversationId || !this.conversations[this.currentConversationId]) return;
-                    
-                    const conversation = this.conversations[this.currentConversationId];
-                    conversation.messages.push({
-                        role: 'user',
-                        content: content,
-                        timestamp: new Date().toISOString()
+                            icon.classList.remove('fa-check');
+                            icon.classList.add('fa-copy');
+                        }, 2000);
                     });
                     
-                    // Atualizar título se for a primeira mensagem
-                    if (conversation.messages.length === 1) {
-                        conversation.title = content.length > 30 ? content.substring(0, 30) + '...' : content;
-                        this.renderConversationList();
-                    }
-                    
-                    this.saveConversations();
-                },
+                    messageDiv.appendChild(actionsDiv);
+                }
+                
+                this.elements.chatbox.appendChild(messageDiv);
+                this.elements.chatbox.scrollTop = this.elements.chatbox.scrollHeight;
+            },
 
-                saveAssistantMessage(content, typingId) {
-                    if (!this.currentConversationId || !this.conversations[this.currentConversationId]) return;
+            // Métodos de persistência
+            loadConfig() {
+                const savedConfig = localStorage.getItem('ViBotConfig');
+                if (savedConfig) {
+                    Object.assign(this.config, JSON.parse(savedConfig));
+                }
+                
+                this.elements.modelSelector.value = this.config.model;
+                this.elements.temperatureSlider.value = this.config.temperature;
+                this.elements.temperatureValue.textContent = this.config.temperature.toFixed(1);
+                this.elements.maxTokensSlider.value = this.config.maxTokens;
+                this.elements.maxTokensValue.textContent = this.config.maxTokens;
+                
+                const savedTheme = localStorage.getItem('theme') || 'light';
+                document.body.setAttribute('data-theme', savedTheme === 'dark' ? 'dark' : '');
+                this.elements.toggleThemeBtn.innerHTML = savedTheme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+            },
+
+            saveConfig() {
+                localStorage.setItem('ViBotConfig', JSON.stringify({
+                    model: this.config.model,
+                    temperature: this.config.temperature,
+                    maxTokens: this.config.maxTokens,
+                    systemPrompt: this.config.systemPrompt
+                }));
+            },
+
+            loadConversations() {
+                const savedConversations = localStorage.getItem('ViBotConversations');
+                this.conversations = savedConversations ? JSON.parse(savedConversations) : {};
+                
+                this.currentConversationId = localStorage.getItem('ViBotCurrentConversation');
+                this.renderConversationList();
+                
+                if (this.currentConversationId && this.conversations[this.currentConversationId]) {
+                    this.renderConversation(this.currentConversationId);
+                }
+            },
+
+            saveConversations() {
+                localStorage.setItem('ViBotConversations', JSON.stringify(this.conversations));
+                if (this.currentConversationId) {
+                    localStorage.setItem('ViBotCurrentConversation', this.currentConversationId);
+                }
+            },
+
+            // Renderização
+            renderConversationList() {
+                this.elements.conversationList.innerHTML = '';
+                
+                Object.keys(this.conversations).forEach(conversationId => {
+                    const conversation = this.conversations[conversationId];
+                    const isActive = conversationId === this.currentConversationId;
                     
-                    const conversation = this.conversations[this.currentConversationId];
-                    conversation.messages.push({
-                        role: 'assistant',
-                        content: content,
-                        timestamp: new Date().toISOString()
+                    const conversationEl = document.createElement('button');
+                    conversationEl.className = `conversation-btn ${isActive ? 'active' : ''}`;
+                    conversationEl.innerHTML = `
+                        <i class="fas fa-comment conversation-icon"></i>
+                        ${conversation.title}
+                        <button class="conversation-delete" data-id="${conversationId}">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    `;
+                    
+                    conversationEl.addEventListener('click', () => {
+                        this.currentConversationId = conversationId;
+                        this.renderConversation(conversationId);
+                        this.renderConversationList();
                     });
                     
-                    this.saveConversations();
+                    conversationEl.querySelector('.conversation-delete').addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        this.deleteConversation(conversationId);
+                    });
                     
-                    // Remover mensagem de "digitando..."
+                    this.elements.conversationList.appendChild(conversationEl);
+                });
+            },
+
+            renderConversation(conversationId) {
+                if (!this.conversations[conversationId]) return;
+                
+                const conversation = this.conversations[conversationId];
+                this.elements.chatbox.innerHTML = '';
+                
+                if (conversation.messages.length === 0) {
+                    this.showWelcomeMessage();
+                } else {
+                    conversation.messages.forEach(message => {
+                        this.appendMessage(message.role, message.content);
+                    });
+                }
+            },
+
+            showWelcomeMessage() {
+                const welcomeHTML = `
+                    <div class="welcome-message">
+                        <div class="welcome-title">Bem-vindo ao ViBot Ultra!</div>
+                        <div class="welcome-text">Seu assistente de IA com 300+ ferramentas poderosas</div>
+                        <div class="features">
+                            <div class="feature-card">
+                                <div class="feature-icon"><i class="fas fa-envelope"></i></div>
+                                <div class="feature-title">Gerador de E-mails</div>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon"><i class="fas fa-file-alt"></i></div>
+                                <div class="feature-title">Resumos Inteligentes</div>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon"><i class="fas fa-globe"></i></div>
+                                <div class="feature-title">Tradução Avançada</div>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon"><i class="fas fa-edit"></i></div>
+                                <div class="feature-title">Otimização de Texto</div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                this.elements.chatbox.innerHTML = welcomeHTML;
+            },
+
+            // Métodos para ferramentas
+            handleToolClick(toolId) {
+                let prompt = '';
+                
+                switch (toolId) {
+                    case 'generateEmailBtn':
+                        prompt = "Por favor, me ajude a escrever um e-mail profissional sobre:";
+                        break;
+                    case 'summarizeTextBtn':
+                        prompt = "Por favor, resuma o seguinte texto de forma clara e concisa:";
+                        break;
+                    case 'translateTextBtn':
+                        prompt = "Por favor, traduza o seguinte texto para [idioma desejado]:";
+                        break;
+                    case 'improveTextBtn':
+                        prompt = "Por favor, melhore e otimize o seguinte texto:";
+                        break;
+                    case 'generateCodeBtn':
+                        prompt = "Por favor, gere código para [descreva o que precisa] na linguagem [especifique a linguagem]:";
+                        break;
+                    case 'playChessBtn':
+                        this.startChessGame();
+                        return;
+                    case 'chessTipsBtn':
+                        prompt = "Por favor, me dê dicas gerais para melhorar no xadrez:";
+                        break;
+                    case 'chessOpeningsBtn':
+                        prompt = "Por favor, explique algumas aberturas de xadrez populares e quando usá-las:";
+                        break;
+                    default:
+                        prompt = `Por favor, me ajude com ${document.getElementById(toolId).textContent.trim()}:`;
+                }
+                
+                this.elements.userInput.value = prompt + ' ';
+                this.elements.userInput.focus();
+                this.elements.userInput.style.height = 'auto';
+                this.elements.toolsSidebar.classList.remove('active');
+            },
+
+            // Métodos para xadrez (simplificado)
+            startChessGame() {
+                this.elements.chatbox.innerHTML = `
+                    <div class="chess-container">
+                        <div class="chess-board" id="chess-board"></div>
+                        <div class="chess-status">Jogo de xadrez iniciado. Brancas começam.</div>
+                        <div class="chess-hint">Clique em uma peça para ver os movimentos possíveis</div>
+                    </div>
+                `;
+            },
+
+            // Atualização da UI
+            updateUI() {
+                // Atualiza qualquer elemento da UI que precise
+                if (this.elements.modelSelector) {
+                    this.elements.modelSelector.value = this.config.model;
+                }
+            },
+
+            // Chamada à API
+            async callAPI(messages, typingId) {
+                try {
+                    const response = await fetch(this.config.apiUrl, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Authorization': `Bearer ${this.config.apiKey}`
+                        },
+                        body: JSON.stringify({
+                            model: this.config.model,
+                            messages: messages,
+                            temperature: this.config.temperature,
+                            max_tokens: this.config.maxTokens,
+                            stream: false
+                        })
+                    });
+                    
+                    if (!response.ok) {
+                        throw new Error(`Erro na API: ${response.status}`);
+                    }
+                    
+                    const data = await response.json();
+                    const assistantMessage = data.choices[0].message.content;
+                    
+                    // Salvar e exibir mensagem do assistente
+                    this.saveAssistantMessage(assistantMessage, typingId);
+                    this.appendMessage('assistant', assistantMessage);
+                    
+                } catch (error) {
+                    console.error('Erro ao chamar a API:', error);
+                    this.appendMessage('error', `Ocorreu um erro: ${error.message}`);
+                    
+                    // Remover mensagem de "digitando..." em caso de erro
                     if (typingId) {
                         const typingElement = document.getElementById(typingId);
                         if (typingElement) {
                             typingElement.remove();
                         }
                     }
-                },
-
-                async callAPI(messages, typingId) {
-                    try {
-                        const response = await fetch(this.config.apiUrl, {
-                            method: 'POST',
-                            headers: {
-                                'Content-Type': 'application/json',
-                                'Authorization': `Bearer ${this.config.apiKey}`
-                            },
-                            body: JSON.stringify({
-                                model: this.config.model,
-                                messages: messages,
-                                temperature: this.config.temperature,
-                                max_tokens: this.config.maxTokens,
-                                stream: false
-                            })
-                        });
-                        
-                        if (!response.ok) {
-                            throw new Error(`Erro na API: ${response.status} ${response.statusText}`);
-                        }
-                        
-                        const data = await response.json();
-                        const assistantMessage = data.choices[0].message.content;
-                        
-                        // Salvar e exibir mensagem do assistente
-                        this.saveAssistantMessage(assistantMessage, typingId);
-                        this.appendMessage('assistant', assistantMessage);
-                        
-                    } catch (error) {
-                        console.error('Erro ao chamar a API:', error);
-                        this.appendMessage('error', `Ocorreu um erro: ${error.message}`);
-                        
-                        // Remover mensagem de "digitando..." em caso de erro
-                        if (typingId) {
-                            const typingElement = document.getElementById(typingId);
-                            if (typingElement) {
-                                typingElement.remove();
-                            }
-                        }
-                    } finally {
-                        this.elements.sendBtn.disabled = false;
-                    }
-                },
-
-                appendMessage(role, content, id = null) {
-                    const messageDiv = document.createElement('div');
-                    messageDiv.className = `message ${role}`;
-                    if (id) messageDiv.id = id;
-                    
-                    messageDiv.innerHTML = content;
-                    
-                    // Adicionar ações para mensagens do bot
-                    if (role === 'assistant') {
-                        const actionsDiv = document.createElement('div');
-                        actionsDiv.className = 'message-actions';
-                        actionsDiv.innerHTML = `
-                            <button class="action-btn copy-btn" title="Copiar">
-                                <i class="fas fa-copy"></i>
-                            </button>
-                            <button class="action-btn download-btn" title="Baixar">
-                                <i class="fas fa-download"></i>
-                            </button>
-                        `;
-                        
-                        const copyBtn = actionsDiv.querySelector('.copy-btn');
-                        copyBtn.addEventListener('click', () => {
-                            navigator.clipboard.writeText(content);
-                            copyBtn.innerHTML = '<i class="fas fa-check"></i>';
-                            setTimeout(() => {
-                                copyBtn.innerHTML = '<i class="fas fa-copy"></i>';
-                            }, 2000);
-                        });
-                        
-                        const downloadBtn = actionsDiv.querySelector('.download-btn');
-                        downloadBtn.addEventListener('click', () => {
-                            this.downloadMessage(content);
-                        });
-                        
-                        messageDiv.appendChild(actionsDiv);
-                    }
-                    
-                    this.elements.chatbox.appendChild(messageDiv);
-                    
-                    // Rolagem automática para a nova mensagem
-                    setTimeout(() => {
-                        this.elements.chatbox.scrollTop = this.elements.chatbox.scrollHeight;
-                    }, 100);
-                },
-
-                downloadMessage(content) {
-                    const blob = new Blob([content], { type: 'text/plain' });
-                    const url = URL.createObjectURL(blob);
-                    const a = document.createElement('a');
-                    a.href = url;
-                    a.download = `vibot-mensagem-${new Date().toISOString().slice(0, 10)}.txt`;
-                    document.body.appendChild(a);
-                    a.click();
-                    document.body.removeChild(a);
-                    URL.revokeObjectURL(url);
-                },
-
-                handleToolClick(toolId) {
-                    let prompt = '';
-                    
-                    // Definir prompts para diferentes ferramentas
-                    switch (toolId) {
-                        case 'generateEmailBtn':
-                            prompt = "Por favor, me ajude a escrever um e-mail profissional sobre:";
-                            break;
-                        case 'summarizeTextBtn':
-                            prompt = "Por favor, resuma o seguinte texto de forma clara e concisa:";
-                            break;
-                        case 'translateTextBtn':
-                            prompt = "Por favor, traduza o seguinte texto para [idioma desejado]:";
-                            break;
-                        case 'improveTextBtn':
-                            prompt = "Por favor, melhore e otimize o seguinte texto:";
-                            break;
-                        case 'generateCodeBtn':
-                            prompt = "Por favor, gere código para [descreva o que precisa] na linguagem [especifique a linguagem]:";
-                            break;
-                        case 'playChessBtn':
-                            this.startChessGame();
-                            return;
-                        case 'chessTipsBtn':
-                            prompt = "Por favor, me dê dicas gerais para melhorar no xadrez:";
-                            break;
-                        case 'chessOpeningsBtn':
-                            prompt = "Por favor, explique algumas aberturas de xadrez populares e quando usá-las:";
-                            break;
-                        case 'chessEndgamesBtn':
-                            prompt = "Por favor, explique alguns princípios importantes de finais de jogo no xadrez:";
-                            break;
-                        case 'chessPuzzlesBtn':
-                            prompt = "Por favor, me apresente um problema/puzzle de xadrez para eu resolver:";
-                            break;
-                        case 'chessAnalysisBtn':
-                            prompt = "Por favor, analise a seguinte posição de xadrez no formato FEN: [cole o FEN aqui]";
-                            break;
-                        default:
-                            prompt = `Por favor, me ajude com ${document.getElementById(toolId).textContent.trim()}:`;
-                    }
-                    
-                    // Definir o prompt na área de entrada
-                    this.elements.userInput.value = prompt + ' ';
-                    this.elements.userInput.focus();
-                    this.autoResizeTextarea();
-                    
-                    // Fechar a barra lateral de ferramentas
-                    this.elements.toolsSidebar.classList.remove('active');
-                },
-
-                startChessGame() {
-                    // Limpar o chatbox
-                    this.elements.chatbox.innerHTML = '';
-                    
-                    // Criar container do tabuleiro
-                    const chessContainer = document.createElement('div');
-                    chessContainer.className = 'chess-container';
-                    
-                    // Criar tabuleiro
-                    const boardEl = document.createElement('div');
-                    boardEl.className = 'chess-board';
-                    boardEl.id = 'chess-board';
-                    
-                    // Criar controles
-                    const controlsEl = document.createElement('div');
-                    controlsEl.className = 'chess-controls';
-                    
-                    // Área de status
-                    const statusEl = document.createElement('div');
-                    statusEl.className = 'chess-status';
-                    statusEl.textContent = 'Brancas começam';
-                    
-                    // Área de dicas
-                    const hintEl = document.createElement('div');
-                    hintEl.className = 'chess-hint';
-                    hintEl.textContent = 'Clique em uma peça para ver os movimentos possíveis';
-                    
-                    // Input para movimentos
-                    const moveInputEl = document.createElement('div');
-                    moveInputEl.className = 'chess-move-input';
-                    moveInputEl.innerHTML = `
-                        <input type="text" id="chess-move-input" placeholder="Digite seu movimento (ex: e2e4)">
-                        <button id="chess-move-submit">Mover</button>
-                    `;
-                    
-                    // Botões de ação
-                    const buttonsEl = document.createElement('div');
-                    buttonsEl.className = 'chess-buttons';
-                    buttonsEl.innerHTML = `
-                        <button id="chess-undo">Desfazer</button>
-                        <button id="chess-reset">Reiniciar</button>
-                        <button id="chess-hint">Dica</button>
-                    `;
-                    
-                    // Montar controles
-                    controlsEl.appendChild(statusEl);
-                    controlsEl.appendChild(hintEl);
-                    controlsEl.appendChild(moveInputEl);
-                    controlsEl.appendChild(buttonsEl);
-                    
-                    // Montar container
-                    chessContainer.appendChild(boardEl);
-                    chessContainer.appendChild(controlsEl);
-                    
-                    // Adicionar ao chatbox
-                    this.elements.chatbox.appendChild(chessContainer);
-                    
-                    // Inicializar o jogo de xadrez
-                    this.initChessGame(boardEl, statusEl, hintEl);
-                },
-
-                initChessGame(boardEl, statusEl, hintEl) {
-                    // Configurar o tabuleiro
-                    this.chess.board = boardEl;
-                    this.chess.statusEl = statusEl;
-                    this.chess.hintEl = hintEl;
-                    this.chess.game.reset();
-                    
-                    // Renderizar o tabuleiro
-                    this.renderChessBoard();
-                    
-                    // Event listeners para os controles
-                    document.getElementById('chess-move-submit').addEventListener('click', () => {
-                        const moveInput = document.getElementById('chess-move-input').value.trim();
-                        if (moveInput) {
-                            this.handleChessMove(moveInput);
-                        }
-                    });
-                    
-                    document.getElementById('chess-move-input').addEventListener('keypress', (e) => {
-                        if (e.key === 'Enter') {
-                            const moveInput = document.getElementById('chess-move-input').value.trim();
-                            if (moveInput) {
-                                this.handleChessMove(moveInput);
-                            }
-                        }
-                    });
-                    
-                    document.getElementById('chess-undo').addEventListener('click', () => {
-                        this.undoChessMove();
-                    });
-                    
-                    document.getElementById('chess-reset').addEventListener('click', () => {
-                        this.resetChessGame();
-                    });
-                    
-                    document.getElementById('chess-hint').addEventListener('click', () => {
-                        this.getChessHint();
-                    });
-                },
-
-                renderChessBoard() {
-                    this.chess.board.innerHTML = '';
-                    
-                    const files = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
-                    const ranks = [8, 7, 6, 5, 4, 3, 2, 1];
-                    
-                    ranks.forEach(rank => {
-                        files.forEach(file => {
-                            const square = file + rank;
-                            const squareEl = document.createElement('div');
-                            squareEl.className = `chess-square ${(files.indexOf(file) + rank) % 2 === 0 ? 'dark' : 'light'}`;
-                            squareEl.dataset.square = square;
-                            
-                            // Adicionar coordenadas
-                            if (rank === 1) {
-                                const fileCoord = document.createElement('span');
-                                fileCoord.className = 'chess-coords bottom';
-                                fileCoord.textContent = file;
-                                squareEl.appendChild(fileCoord);
-                            }
-                            
-                            if (file === 'h') {
-                                const rankCoord = document.createElement('span');
-                                rankCoord.className = 'chess-coords top';
-                                rankCoord.textContent = rank;
-                                squareEl.appendChild(rankCoord);
-                            }
-                            
-                            // Adicionar peça se existir
-                            const piece = this.chess.game.get(square);
-                            if (piece) {
-                                const pieceEl = document.createElement('div');
-                                pieceEl.className = `chess-piece ${piece.color}`;
-                                pieceEl.innerHTML = this.getChessPieceSymbol(piece);
-                                pieceEl.dataset.square = square;
-                                squareEl.appendChild(pieceEl);
-                            }
-                            
-                            // Event listeners para interação
-                            squareEl.addEventListener('click', () => this.handleSquareClick(square));
-                            
-                            this.chess.board.appendChild(squareEl);
-                        });
-                    });
-                    
-                    // Atualizar status
-                    this.updateChessStatus();
-                },
-
-                getChessPieceSymbol(piece) {
-                    const symbols = {
-                        p: '♟', n: '♞', b: '♝', r: '♜', q: '♛', k: '♚',
-                        P: '♙', N: '♘', B: '♗', R: '♖', Q: '♕', K: '♔'
-                    };
-                    return symbols[piece.type] || '';
-                },
-
-                handleSquareClick(square) {
-                    // Se já tiver uma peça selecionada, tentar mover
-                    if (this.chess.selectedSquare) {
-                        const move = {
-                            from: this.chess.selectedSquare,
-                            to: square,
-                            promotion: 'q' // Sempre promover a rainha por padrão
-                        };
-                        
-                        try {
-                            const result = this.chess.game.move(move);
-                            if (result) {
-                                this.chess.selectedSquare = null;
-                                this.chess.selectedPiece = null;
-                                this.clearPossibleMoves();
-                                this.renderChessBoard();
-                            } else {
-                                // Movimento inválido, selecionar outra peça
-                                this.selectPiece(square);
-                            }
-                        } catch (e) {
-                            console.error('Movimento inválido:', e);
-                            this.selectPiece(square);
-                        }
-                    } else {
-                        // Selecionar uma peça
-                        this.selectPiece(square);
-                    }
-                },
-
-                selectPiece(square) {
-                    const piece = this.chess.game.get(square);
-                    
-                    // Verificar se é a vez do jogador
-                    if (piece && piece.color === this.chess.game.turn()) {
-                        this.chess.selectedSquare = square;
-                        this.chess.selectedPiece = piece;
-                        
-                        // Mostrar movimentos possíveis
-                        this.showPossibleMoves(square);
-                    } else {
-                        this.chess.selectedSquare = null;
-                        this.chess.selectedPiece = null;
-                        this.clearPossibleMoves();
-                    }
-                },
-
-                showPossibleMoves(square) {
-                    this.clearPossibleMoves();
-                    
-                    // Obter todos os movimentos possíveis para esta peça
-                    const moves = this.chess.game.moves({
-                        square: square,
-                        verbose: true
-                    });
-                    
-                    // Destacar a peça selecionada
-                    const selectedSquareEl = document.querySelector(`.chess-square[data-square="${square}"]`);
-                    if (selectedSquareEl) {
-                        selectedSquareEl.classList.add('selected');
-                    }
-                    
-                    // Destacar os quadrados de movimento possível
-                    moves.forEach(move => {
-                        const squareEl = document.querySelector(`.chess-square[data-square="${move.to}"]`);
-                        if (squareEl) {
-                            squareEl.classList.add('possible-move');
-                            this.chess.possibleMoves.push(squareEl);
-                        }
-                    });
-                },
-
-                clearPossibleMoves() {
-                    // Remover destaque de todos os quadrados
-                    document.querySelectorAll('.chess-square').forEach(squareEl => {
-                        squareEl.classList.remove('selected', 'possible-move', 'last-move');
-                    });
-                    
-                    this.chess.possibleMoves = [];
-                },
-
-                handleChessMove(moveInput) {
-                    try {
-                        const result = this.chess.game.move(moveInput);
-                        if (result) {
-                            document.getElementById('chess-move-input').value = '';
-                            this.renderChessBoard();
-                        } else {
-                            this.chess.hintEl.textContent = 'Movimento inválido. Tente novamente.';
-                        }
-                    } catch (e) {
-                        console.error('Movimento inválido:', e);
-                        this.chess.hintEl.textContent = 'Movimento inválido. Tente novamente.';
-                    }
-                },
-
-                undoChessMove() {
-                    const move = this.chess.game.undo();
-                    if (move) {
-                        this.renderChessBoard();
-                        this.chess.hintEl.textContent = `Movimento desfeito: ${move.from}→${move.to}`;
-                    } else {
-                        this.chess.hintEl.textContent = 'Nada para desfazer';
-                    }
-                },
-
-                resetChessGame() {
-                    this.chess.game.reset();
-                    this.renderChessBoard();
-                    this.chess.hintEl.textContent = 'Jogo reiniciado. Brancas começam.';
-                },
-
-                getChessHint() {
-                    // Implementação simplificada - poderia ser mais sofisticada
-                    const possibleMoves = this.chess.game.moves();
-                    if (possibleMoves.length > 0) {
-                        const randomMove = possibleMoves[Math.floor(Math.random() * possibleMoves.length)];
-                        this.chess.hintEl.textContent = `Sugestão: ${randomMove}`;
-                    } else {
-                        this.chess.hintEl.textContent = 'Não há movimentos possíveis.';
-                    }
-                },
-
-                updateChessStatus() {
-                    if (this.chess.game.isCheckmate()) {
-                        this.chess.statusEl.textContent = `Xeque-mate! ${this.chess.game.turn() === 'w' ? 'Pretas' : 'Brancas'} ganharam.`;
-                    } else if (this.chess.game.isDraw()) {
-                        this.chess.statusEl.textContent = 'Empate!';
-                    } else if (this.chess.game.isCheck()) {
-                        this.chess.statusEl.textContent = `Xeque! É a vez das ${this.chess.game.turn() === 'w' ? 'brancas' : 'pretas'}.`;
-                    } else {
-                        this.chess.statusEl.textContent = `É a vez das ${this.chess.game.turn() === 'w' ? 'brancas' : 'pretas'}.`;
-                    }
-                },
-
-                updateUI() {
-                    // Atualizar o nome do modelo exibido
-                    const modelName = this.modelNames[this.config.model] || this.config.model;
-                    document.querySelectorAll('.model-name').forEach(el => {
-                        el.textContent = modelName;
-                    });
+                } finally {
+                    this.elements.sendBtn.disabled = false;
                 }
-            };
+            },
 
-            // Inicializar o ViBot
-            ViBot.init();
+            saveUserMessage(content) {
+                if (!this.currentConversationId || !this.conversations[this.currentConversationId]) return;
+                
+                const conversation = this.conversations[this.currentConversationId];
+                conversation.messages.push({
+                    role: 'user',
+                    content: content,
+                    timestamp: new Date().toISOString()
+                });
+                
+                // Atualizar título se for a primeira mensagem
+                if (conversation.messages.length === 1) {
+                    conversation.title = content.length > 30 ? content.substring(0, 30) + '...' : content;
+                    this.renderConversationList();
+                }
+                
+                this.saveConversations();
+            },
+
+            saveAssistantMessage(content, typingId) {
+                if (!this.currentConversationId || !this.conversations[this.currentConversationId]) return;
+                
+                const conversation = this.conversations[this.currentConversationId];
+                conversation.messages.push({
+                    role: 'assistant',
+                    content: content,
+                    timestamp: new Date().toISOString()
+                });
+                
+                this.saveConversations();
+                
+                // Remover mensagem de "digitando..."
+                if (typingId) {
+                    const typingElement = document.getElementById(typingId);
+                    if (typingElement) {
+                        typingElement.remove();
+                    }
+                }
+            },
+
+            deleteConversation(conversationId) {
+                if (confirm('Tem certeza que deseja excluir esta conversa?')) {
+                    delete this.conversations[conversationId];
+                    
+                    if (this.currentConversationId === conversationId) {
+                        const remainingIds = Object.keys(this.conversations);
+                        this.currentConversationId = remainingIds.length > 0 ? remainingIds[0] : null;
+                        
+                        if (this.currentConversationId) {
+                            this.renderConversation(this.currentConversationId);
+                        } else {
+                            this.startNewConversation();
+                        }
+                    }
+                    
+                    this.saveConversations();
+                    this.renderConversationList();
+                }
+            },
+
+            deleteAllConversations() {
+                if (confirm('Tem certeza que deseja excluir TODAS as conversas? Esta ação não pode ser desfeita.')) {
+                    this.conversations = {};
+                    this.startNewConversation();
+                }
+            }
+        };
+
+        // Inicialização quando o DOM estiver pronto
+        document.addEventListener('DOMContentLoaded', () => {
+            window.vibot = Object.create(ViBot);
+            vibot.init();
         });
     </script>
 </body>
